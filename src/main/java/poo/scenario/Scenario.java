@@ -18,19 +18,19 @@ import javafx.stage.Stage;
 
 public class Scenario {
 
-    private Scene scene; // Cena do JavaFX
-    public Group container = new Group(); // Contem todos os elementos que estarão em scene
+    private Scene scene; // Escena de JavaFX
+    public Group container = new Group(); // Contiene todos los elementos que estarán en la escena
     private Snake snake;
     private Apple apple;
     private Pineapple pineapple;
     // private Arquivo file = new Arquivo();
 
     public Scenario(Stage primaryStage, Snake snake, Apple apple, Pineapple pineapple) {
-        // Criando o scene
-        this.scene = new Scene(container, Config.width, Config.height); // Group - Largura - Altura
-        primaryStage.setScene(scene); // setando scene na Classe Scene
-        primaryStage.setTitle("Snake Game - Projeto POO by Douglas Souza");
-        primaryStage.show(); // Mostrando tela
+        // Creando la escena
+        this.scene = new Scene(container, Config.width, Config.height); // Group - Ancho - Alto
+        primaryStage.setScene(scene); // Configurando la escena en la clase Scene
+        primaryStage.setTitle("Snake Game - Proyecto POO by Douglas Souza");
+        primaryStage.show(); // Mostrando la ventana
 
         this.snake = snake;
         this.apple = apple;
@@ -39,61 +39,60 @@ public class Scenario {
         // KeyEventLoop keyEventLoop = new KeyEventLoop(this, snake, apple, pineapple);
         new KeyEventLoop(this, snake, apple, pineapple);
 
-        // Botão play sendo necessário apertar antes para começar o jogo
-        // Assim que pressiondo, adiconaca snake e as comidas a scene
+        // Botón play que se debe presionar antes para comenzar el juego
+        // Cuando se presiona, agrega la serpiente y las comidas a la escena
         PlayButton playButton = new PlayButton(e -> {
             cleanScene();
 
-            // Colocando o Canvas de head numa lista Children dentro de container
+            // Colocando el Canvas de la cabeza en una lista Children dentro de container
             container.getChildren().add(snake.getHead());
 
-            // Colocando o Canvas de apple e pineapple dentro do container
+            // Colocando el Canvas de apple y pineapple dentro del container
             container.getChildren().add(apple.getApple());
             container.getChildren().add(pineapple.getPineapple());
         });
 
-        // Adiciona o playButton a scene
+        // Agrega el playButton a la escena
         this.container.getChildren().addAll(playButton);
 
     }
 
-    // Método que retorna uma ação quando certa tecla for pressionada
+    // Método que retorna una acción cuando se presiona cierta tecla
     public void keyPressed(EventHandler<? super KeyEvent> keyAction) {
         this.scene.setOnKeyPressed(keyAction);
     }
 
-    // Método que chama a Classe TryAgainButton
+    // Método que llama a la clase TryAgainButton
     public void showGameOver(KeyEventLoop keyEventLoop) {
         TryAgainButton tryAgainButton = new TryAgainButton(e -> {
             Integer scoreTotal = Config.score;
             // file.writeScores(scoreTotal, Config.tries);
-            Arquivo.writeScores(scoreTotal, Config.tries);// Escrevendo o Score anterior no ArquivoPontos.txr
-            Config.tries += 1; // Aumenta o numero de tentativas
-            Config.score = 0; // Igualando o score para 0 para as outras tentativas
+            Arquivo.writeScores(scoreTotal, Config.tries); // Escribiendo la puntuación anterior en ArchivoPuntos.txr
+            Config.tries += 1; // Incrementa el número de intentos
+            Config.score = 0; // Igualando la puntuación a 0 para los otros intentos
             cleanScene();
             snake.changeSnakeColor(Color.GREEN);
 
-            this.container.getChildren().add(this.snake.resetGame()); // Readicionando instância de head
+            this.container.getChildren().add(this.snake.resetGame()); // Reagregando instancia de la cabeza
 
-            // Readicionando instâncias de apple e pineapple
+            // Reagregando instancias de apple y pineapple
             this.container.getChildren().add(apple.getApple());
             this.container.getChildren().add(pineapple.getPineapple());
             keyEventLoop.startLoop();
         });
 
-        this.container.getChildren().add(tryAgainButton); // Adiciona o tryAgainButton a scene
+        this.container.getChildren().add(tryAgainButton); // Agrega el tryAgainButton a la escena
     }
 
-    // Limpa os elementos da tela quando acontece o Game Over
+    // Limpia los elementos de la pantalla cuando ocurre el Game Over
     public void cleanScene() {
-        // limpando toda a lista Children de container
+        // Limpiando toda la lista Children de container
         this.container.getChildren().remove(0, this.container.getChildren().size());
     }
 
-    // Classe Node é o pai de todos os elementos do JavaFX, sendo assim, o resto
-    // Extends de Node
+    // La clase Node es el padre de todos los elementos de JavaFX, así que el resto extiende Node
     public void addSnakeBodyPart(Node node) {
-        this.container.getChildren().add(node); // Adiciona o parâmetro recebido ao container
+        this.container.getChildren().add(node); // Agrega el parámetro recibido al container
     }
 
 }

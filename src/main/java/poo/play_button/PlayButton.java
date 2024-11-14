@@ -13,37 +13,37 @@ public class PlayButton extends VBox {
 
     public PlayButton(EventHandler<ActionEvent> playAction) {
 
-        // Título do jogo
+        // Título del juego
         Text title = new Text("Snake Game");
         title.setFont(Font.font(60));
-        title.setTranslateY(-80); // Move o título para cima
-        title.setStyle("-fx-font-weight: bold;"); // Definindo o estilo Negrito
+        title.setTranslateY(-80); // Mueve el título hacia arriba
+        title.setStyle("-fx-font-weight: bold;"); // Definiendo el estilo en negrita
 
         Text welcome = new Text(
-                "Seja Bem-Vindo(a) ao Jogo!");
+                "¡Bienvenido(a) al Juego!");
         welcome.setFont(Font.font(30));
 
         Text description = new Text(
-                "Observações: \nMaças Valem 3 Pontos e Abacaxis Valem 1 Ponto. \nUse as Setas ou as Teclas W, A, S e D para Movimentar a Snake!");
+                "Observaciones: \nLas manzanas valen 3 puntos y las piñas valen 1 punto. \nUsa las flechas o las teclas W, A, S y D para mover la serpiente!");
         description.setFont(Font.font(30));
 
         welcome.setTranslateY(-20);
         description.setTranslateY(-20);
 
-        Button play = new Button("Iniciar Tentativa");
+        Button play = new Button("Iniciar Intento");
         play.setFont(Font.font(40));
         play.setOnAction(playAction);
         play.setTranslateY(40);
 
-        // Setando o tamanho do VBox igual ao tamanha da Scene. Auxilia na hora de
-        // centralizar o Label
+        // Estableciendo el tamaño del VBox igual al tamaño de la escena. Ayuda a la hora de
+        // centralizar el Label
         this.setMinWidth(Config.width);
         this.setMinHeight(Config.height);
 
-        this.setSpacing(20); // Espaçamento entre os elementos
+        this.setSpacing(20); // Espaciado entre los elementos
         this.getChildren().addAll(title, description, play);
 
-        this.setAlignment(Pos.CENTER);
+        this.setAlignment(Pos.CENTER); // Alineación centrada
     }
 
 }
