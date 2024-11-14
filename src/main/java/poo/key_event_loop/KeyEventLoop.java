@@ -10,99 +10,98 @@ import javafx.animation.Timeline;
 import javafx.scene.input.KeyCode;
 import javafx.util.Duration;
 
-//Classe que verifica a movimentação da Snake em um Loop
+//Clase que verifica el movimiento de la serpiente en un bucle
 public class KeyEventLoop {
 
     private Scenario scenario;
-    private KeyCode currentDirection; // Atual direção que a Snake está
+    private KeyCode currentDirection; // Dirección actual en la que se mueve la serpiente
     private Snake snake;
     private Timeline timeline;
     private KeyFrame keyFrame;
     private Apple apple;
     private Pineapple pineapple;
 
-    // Necessário usar a coordenada da Snake no método StartLoop
+    // Es necesario usar la coordenada de la serpiente en el método StartLoop
     public KeyEventLoop(Scenario scenario, Snake snake, Apple apple, Pineapple pineapple) {
         this.scenario = scenario;
         this.snake = snake;
         this.apple = apple;
         this.pineapple = pineapple;
 
-        // Usando sintaxe Lâmbida. Ao acontecer tal evento "e", realizar ações
+        // Usando sintaxis lambda. Cuando ocurra tal evento "e", realizar acciones
         // específicas
         this.scenario.keyPressed(e -> {
 
-            KeyCode key = e.getCode(); // verifica qual tecla foi pressionada
+            KeyCode key = e.getCode(); // Verifica qué tecla fue presionada
 
-            // !(currentDirection.equals(KeyCode.LEFT)) impede que a Snake vá na direção
-            // contrária a que estava indo. Evita Bugs
+            // !(currentDirection.equals(KeyCode.LEFT)) impide que la serpiente vaya en
+            // la dirección contraria a la que iba. Evita errores
 
-            // Direita
+            // Derecha
             if (key.equals(KeyCode.RIGHT) || key.equals(KeyCode.D) && !KeyCode.LEFT.equals(currentDirection)) {
                 currentDirection = key;
             }
 
-            // Esquerda
+            // Izquierda
             if (key.equals(KeyCode.LEFT) || key.equals(KeyCode.A) && !KeyCode.RIGHT.equals(currentDirection)) {
                 currentDirection = key;
             }
 
-            // Cima
+            // Arriba
             if (key.equals(KeyCode.UP) || key.equals(KeyCode.W) && !KeyCode.DOWN.equals(currentDirection)) {
                 currentDirection = key;
             }
 
-            // Baixo
+            // Abajo
             if (key.equals(KeyCode.DOWN) || key.equals(KeyCode.S) && !KeyCode.UP.equals(currentDirection)) {
                 currentDirection = key;
             }
 
         });
 
-        startLoop(); // chamando o Loop
+        startLoop(); // Llamando al bucle
     }
 
     public void startLoop() {
-        timeline = new Timeline(); // Instância do Timeline
+        timeline = new Timeline(); // Instancia de Timeline
 
-        // Auxiliar para o timeline
+        // Auxiliar para el timeline
         keyFrame = new KeyFrame(Duration.millis(160), e -> {
             Integer posicionX = snake.getPosicionX();
             Integer posicionY = snake.getPosicionY();
 
-            // Caso seja igual andar para a Direita
+            // Si la dirección es igual, mueve hacia la derecha
             if (KeyCode.RIGHT.equals(currentDirection) || KeyCode.D.equals(currentDirection)) {
-                posicionX += Config.squareSize; // Anda para a direita uma posição equivalente ao Square
+                posicionX += Config.squareSize; // Se mueve hacia la derecha una posición equivalente al tamaño del cuadrado
             }
 
             if (KeyCode.LEFT.equals(currentDirection) || KeyCode.A.equals(currentDirection)) {
                 posicionX -= Config.squareSize;
             }
 
-            // No caso do eixo Y, para subir se subtrai
+            // En el eje Y, para subir se resta
             if (KeyCode.UP.equals(currentDirection) || KeyCode.W.equals(currentDirection)) {
                 posicionY -= Config.squareSize;
             }
 
-            // Para descer, soma
+            // Para bajar, se suma
             if (KeyCode.DOWN.equals(currentDirection) || KeyCode.S.equals(currentDirection)) {
                 posicionY += Config.squareSize;
             }
 
-            // Verifica se a Snake não ultrapassou alguma borda da tela (scene)
-            // -Config.squareSize é usado pois quando posicionX = Config.width uma parte já
-            // está fora da tela
-            // Tambem faz a verificação se não houve colisão entre Head e algum elemento de
-            // Body
+            // Verifica si la serpiente ha cruzado algún borde de la pantalla (escena)
+            // -Config.squareSize se usa porque cuando posicionX = Config.width, una parte ya
+            // está fuera de la pantalla
+            // También verifica si hubo colisión entre la cabeza y algún elemento del cuerpo
             if (posicionX < 0 || posicionX > Config.width - Config.squareSize
                     || posicionY < 0 || posicionY > Config.height - Config.squareSize
                     || snake.bodyCollision(posicionX, posicionY)) {
                 gameOver();
             } else {
-                // Verifica se a posição da Head de Snake está na mesma posição de Food (Apple
-                // ou Pineapple)
+                // Verifica si la posición de la cabeza de la serpiente coincide con la posición de la comida (manzana
+                // o piña)
                 if (posicionX.equals(apple.getPosicionX()) && posicionY.equals(apple.getPosicionY())) {
-                    this.apple.setRandomPosition(); // Seta uma nova posição aleatória para Food
+                    this.apple.setRandomPosition(); // Asigna una nueva posición aleatoria para la comida
                     this.snake.eatApple(scenario);
                 } else if (posicionX.equals(pineapple.getPosicionX())
                         && posicionY.equals(pineapple.getPosicionY())) {
@@ -110,22 +109,22 @@ public class KeyEventLoop {
                     this.snake.eatPineapple(scenario);
                 }
 
-                this.snake.setPosition(posicionX, posicionY); // Setando as posições
+                this.snake.setPosition(posicionX, posicionY); // Estableciendo las posiciones
             }
         });
 
         timeline.getKeyFrames().add(keyFrame);
-        timeline.setCycleCount(Integer.MAX_VALUE); // Executa o Timeline um "número" infinito de vezes
-        timeline.play(); // Executa o timeline
+        timeline.setCycleCount(Integer.MAX_VALUE); // Ejecuta el Timeline un "número" infinito de veces
+        timeline.play(); // Ejecuta el timeline
     }
 
-    // O método para o keyEventLoop e ativa a Classe TryAgainButton
+    // El método para el keyEventLoop y activa la clase TryAgainButton
     public void gameOver() {
         timeline.stop();
-        this.currentDirection = null; // Faz o personagem Snake voltar a ficar parado
+        this.currentDirection = null; // Hace que la serpiente se quede quieta
         this.snake.deadSnake();
 
-        // Usando "this" pois passa como parâmetro o próprio keyEventLoop
+        // Usando "this" porque pasa como parámetro el propio keyEventLoop
         this.scenario.showGameOver(this);
     }
 

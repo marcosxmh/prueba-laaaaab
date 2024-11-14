@@ -10,16 +10,16 @@ import javafx.scene.paint.Paint;
 import java.util.ArrayList;
 import java.util.List;
 
-//Construção do personagem - Snake
+//Construcción del personaje - Snake
 public class Snake {
 
-    private Canvas head; // Cabeça da snake
-    // Armazena os blocos (corpo) em Canvas
-    private List<Canvas> body = new ArrayList<Canvas>(); // Lista para armazenar o corpo da snake
+    private Canvas head; // Cabeza de la serpiente
+    // Almacena los bloques (cuerpo) en Canvas
+    private List<Canvas> body = new ArrayList<Canvas>(); // Lista para almacenar el cuerpo de la serpiente
 
-    // Vai armazenar o historico de posições (Integer) da snake
-    // Será usado para fazer com que os bodyPart fiquem exatamente uma posição
-    // anterio a da cabeça
+    // Va a almacenar el historial de posiciones (Integer) de la serpiente
+    // Se usará para hacer que las partes del cuerpo se coloquen exactamente una posición
+    // antes que la de la cabeza
     private List<Integer[]> positionHistory = new ArrayList<>();
 
     public Snake() {
@@ -27,98 +27,96 @@ public class Snake {
     }
 
     public void setHeadOnCenter() {
-        // Setando a posição de head no meio da scene
+        // Estableciendo la posición de la cabeza en el centro de la escena
         this.head.setTranslateX(Config.width / 2 - Config.squareSize);
         this.head.setTranslateY(Config.height / 2 - Config.squareSize);
     }
 
-    // Construindo a snake
+    // Construyendo la serpiente
     private void buildingSnake() {
-        this.head = CanvasUtilsSquares.buildingSquare(Color.TRANSPARENT); // Cria um canvas transparente
-        GraphicsContext gc = this.head.getGraphicsContext2D(); // Obtém o contexto gráfico 2D
-        gc.setFill(Color.GREEN); // Define a cor de preenchimento como verde
-        double radius = Config.squareSize / 2; // Calcula o raio do círculo
-        gc.fillOval(0, 0, radius * 2, radius * 2); // Desenha um círculo na posição (0, 0) com o raio calculado
-        this.setHeadOnCenter(); // Define a posição da cabeça no centro
+        this.head = CanvasUtilsSquares.buildingSquare(Color.TRANSPARENT); // Crea un canvas transparente
+        GraphicsContext gc = this.head.getGraphicsContext2D(); // Obtiene el contexto gráfico 2D
+        gc.setFill(Color.GREEN); // Establece el color de relleno como verde
+        double radius = Config.squareSize / 2; // Calcula el radio del círculo
+        gc.fillOval(0, 0, radius * 2, radius * 2); // Dibuja un círculo en la posición (0, 0) con el radio calculado
+        this.setHeadOnCenter(); // Establece la posición de la cabeza en el centro
     }
 
-    // Retorna o Canvas de head
+    // Retorna el Canvas de la cabeza
     public Canvas getHead() {
-        return this.head; // Retornando instância de snake
+        return this.head; // Retorna la instancia de la serpiente
     }
 
-    // Método usado para pegar a coordenada X
+    // Método utilizado para obtener la coordenada X
     public Integer getPosicionX() {
-        return (int) this.head.getTranslateX(); // Pega a posição X e faz o Casting de double para int
+        return (int) this.head.getTranslateX(); // Obtiene la posición X y realiza el casting de double a int
     }
 
-    // Método usado para pegar a coordenada Y
+    // Método utilizado para obtener la coordenada Y
     public Integer getPosicionY() {
         return (int) this.head.getTranslateY();
     }
 
-    // Faz toda a movimentação da head e do body da snake
+    // Realiza todo el movimiento de la cabeza y el cuerpo de la serpiente
     public void setPosition(Integer x, Integer y) {
         this.head.setTranslateX(x);
         this.head.setTranslateY(y);
 
-        // Vai funcionar como uma pilha
+        // Funciona como una pila
         for (int i = 0; i < body.size(); i++) {
-            Canvas bodyPart = body.get(i); // Armazendo em bodyPart o item da lista na posição i
+            Canvas bodyPart = body.get(i); // Almacena en bodyPart el elemento de la lista en la posición i
 
-            // Obs: O item mais velho fica no final da pilha, logo possuir o menor index
-            // Pegando a posição de maior valor (maior indice)
-            // Tamanho 10 (0 a 9) por isso a subtração. O i na primeiro loop vale 0, por
-            // isso a soma de 1.
+            // Nota: El elemento más viejo está al final de la pila, por lo que tiene el índice más bajo
+            // Se obtiene la posición de mayor valor (mayor índice)
+            // Tamaño 10 (de 0 a 9), por eso la resta. El i en el primer ciclo es 0, por eso la suma de 1.
             Integer[] posicion = this.positionHistory.get(positionHistory.size() - (i + 1));
 
-            // Setando as posições para 0
+            // Estableciendo las posiciones a 0
             bodyPart.setTranslateX(posicion[0]);
-            bodyPart.setTranslateY(posicion[1]); // ?
+            bodyPart.setTranslateY(posicion[1]);
 
-            // Removendo posições desnecessárias
-            // Necessário somente o tamanho da snake e + uma posição
+            // Eliminando posiciones innecesarias
+            // Solo es necesario el tamaño de la serpiente y una posición adicional
             if (positionHistory.size() > body.size() + 1) {
-                positionHistory.remove(0); // Remove o item mais velho, no caso o menor index (0)
+                positionHistory.remove(0); // Elimina el ítem más viejo, en este caso el de menor índice (0)
             }
         }
 
-        // Instanciando um novo Array de Integer, inicializando com as posições x e y
+        // Instanciando un nuevo Array de Integer, inicializado con las posiciones x y y
         this.positionHistory.add(new Integer[] { x, y });
-
     }
 
-    // Método retornando Canvas
+    // Método que retorna el Canvas
     public Canvas resetGame() {
-        setHeadOnCenter(); // Setado para o Centro
+        setHeadOnCenter(); // Establece la cabeza en el centro
         Canvas headInstance;
         headInstance = getHead();
 
-        changeSnakeColor(Color.GREEN); // Alterando a cor Vermelha para Verde ao resetar
+        changeSnakeColor(Color.GREEN); // Cambia el color de rojo a verde al reiniciar
 
-        this.positionHistory.clear(); // Limpando o histórico
-        this.body.clear(); // Limpando a lista de body
+        this.positionHistory.clear(); // Limpia el historial
+        this.body.clear(); // Limpia la lista del cuerpo
 
         return headInstance;
     }
 
     public void deadSnake() {
-        changeSnakeColor(Color.BLACK);
+        changeSnakeColor(Color.BLACK); // Cambia el color de la serpiente a negro cuando muere
     }
 
     public void changeSnakeColor(Paint color) {
         GraphicsContext gc = getHead().getGraphicsContext2D();
-        gc.clearRect(0, 0, Config.squareSize, Config.squareSize); // Limpando o Canvas
-        gc.setFill(color); // Preenchendo o círculo com a cor preta
-        double radius = Config.squareSize / 2; // Calculando o raio do círculo
-        gc.fillOval(0, 0, radius * 2, radius * 2); // Desenhando um círculo preto na posição (0, 0) com o raio calculado
+        gc.clearRect(0, 0, Config.squareSize, Config.squareSize); // Limpia el Canvas
+        gc.setFill(color); // Rellena el círculo con el color especificado
+        double radius = Config.squareSize / 2; // Calcula el radio del círculo
+        gc.fillOval(0, 0, radius * 2, radius * 2); // Dibuja un círculo con el radio calculado
     }
 
     public void eatApple(Scenario scenario) {
-        // Cada parte da snake sendo um square da cor Verde
+        // Cada parte del cuerpo de la serpiente es un cuadrado de color verde
         Canvas bodyPart = CanvasUtilsSquares.buildingSquare(Color.GREEN);
         scenario.addSnakeBodyPart(bodyPart);
-        this.body.add(bodyPart); // Adiciona o bodyPart a lista (body) que terá todos
+        this.body.add(bodyPart); // Agrega el bodyPart a la lista (body) que contendrá todo
         Config.score += 3;
     }
 
@@ -129,20 +127,20 @@ public class Snake {
         Config.score += 1;
     }
 
-    // Faz a verificação da collision entre a snake e body
-    // Os parametros x e y são as coordenadas da head da snake. Faço uso do for each
-    // com a lista de body
-    // Caso a cebeça colida com algum objeto de body, return true
+    // Verifica la colisión entre la serpiente y su cuerpo
+    // Los parámetros x e y son las coordenadas de la cabeza de la serpiente. Se usa un for-each
+    // con la lista del cuerpo
+    // Si la cabeza colide con alguna parte del cuerpo, retorna true
     public boolean bodyCollision(Integer x, Integer y) {
 
-        // Variavel bodyPart recebe cada elemento da lista (pilha) body
+        // La variable bodyPart recibe cada elemento de la lista (pila) body
         for (Canvas bodyPart : this.body) {
-            Integer bodyPositionX = (int) bodyPart.getTranslateX(); // Pegando a posição X de bodyPart
-            Integer bodyPositionY = (int) bodyPart.getTranslateY(); // Pegando a posição Y de bodyPart
+            Integer bodyPositionX = (int) bodyPart.getTranslateX(); // Obtiene la posición X de bodyPart
+            Integer bodyPositionY = (int) bodyPart.getTranslateY(); // Obtiene la posición Y de bodyPart
 
-            // Se a posiçoes de bodyPart forem iguais a positions mandadas pelo parâmetro
+            // Si las posiciones de bodyPart son iguales a las posiciones pasadas por parámetro
             if (bodyPositionX.equals(x) && bodyPositionY.equals(y)) {
-                return true;
+                return true; // Retorna true si hay colisión
             }
         }
 

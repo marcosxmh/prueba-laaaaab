@@ -5,19 +5,19 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Paint;
 
-//Classe Canvas usada p/ Criação de "desenhos" do jogo
+//Clase Canvas usada para la creación de "dibujos" del juego
 public class CanvasUtilsSquares {
 
-    // Construindo um quadrado com certa cor
+    // Construyendo un cuadrado con un color determinado
     public static Canvas buildingSquare(Paint color) {
-        Canvas square = new Canvas(Config.squareSize, Config.squareSize); // Criando um quadrado
-        GraphicsContext gc = square.getGraphicsContext2D(); // Usado para adicionar elementos ao objeto
+        Canvas square = new Canvas(Config.squareSize, Config.squareSize); // Creando un cuadrado
+        GraphicsContext gc = square.getGraphicsContext2D(); // Usado para agregar elementos al objeto
 
-        // Primeira seta-se a cor, depois escreve-o no Canvas
-        gc.setFill(color); // Setando a color do square
+        // Primero se establece el color, luego se dibuja en el Canvas
+        gc.setFill(color); // Estableciendo el color del cuadrado
 
-        // Escrevendo um objeto square no Canvas
-        gc.fillRect(0, 0, Config.squareSize, Config.squareSize); // Posição x - Posição y - tamanho
+        // Dibujando un objeto cuadrado en el Canvas
+        gc.fillRect(0, 0, Config.squareSize, Config.squareSize); // Posición x - Posición y - tamaño
 
         return square;
     }

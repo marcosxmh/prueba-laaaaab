@@ -6,7 +6,7 @@ import poo.food.Food;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.paint.Color;
 
-//Classe para comida Apple - Maça
+//Clase para comida Apple - Manzana
 public class Apple extends Food {
 
     private Canvas apple;
@@ -32,7 +32,7 @@ public class Apple extends Food {
 
     @Override
     public Integer getPosicionX() {
-        return (int) this.apple.getTranslateX(); // Pega a posição X e faz o Casting de double para int
+        return (int) this.apple.getTranslateX(); // Obtiene la posición X y hace el casting de double a int
     }
 
     @Override
