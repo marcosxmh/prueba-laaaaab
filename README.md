@@ -1,64 +1,64 @@
-# Snake Game - Projeto de Programação Orientada a Objetos
+# Snake Game - Proyecto de Programación Orientada a Objetos
 
-Este é um Projeto Desktop do famoso Snake Game desenvolvido para a disciplina de Programação Orientada a Objetos. O jogo foi implementado em Java, utilizando a Framework Maven para Gerenciamento de Dependências e construção do Projeto.
+Este es un proyecto de escritorio del famoso juego Snake desarrollado para la asignatura de Programación Orientada a Objetos. El juego ha sido implementado en Java, utilizando Maven para la gestión de dependencias y construcción del proyecto.
 
-## Sobre o Projeto
+## Sobre el Proyecto
 
-O Snake Game é um clássico jogo de arcade onde o jogador controla uma cobra que cresce de acordo com os itens que ela consome no cenário. O objetivo do jogo é guiar a cobra para que ela se alimente de frutas como Maças e Abacaxis, evitando colidir com as bordas da tela ou com o próprio corpo.
+El Snake Game es un clásico juego de arcade en el que el jugador controla una serpiente que crece al consumir elementos en el escenario. El objetivo del juego es guiar a la serpiente para que se alimente de frutas como manzanas y piñas, evitando chocar con los bordes de la pantalla o con su propio cuerpo.
 
-## Conceitos de Programação Orientada a Objetos (POO)
+## Conceptos de Programación Orientada a Objetos (POO)
 
-O Projeto utiliza os conceitos fundamentais de Programação Orientada a Objetos:
+El proyecto utiliza los conceptos fundamentales de Programación Orientada a Objetos:
 
-### Classes e Objetos:
+### Clases y Objetos
 
-As entidades do Jogo, como a Cobra, as Frutas e o Cenário, são representadas por Classes. Os Objetos são Instâncias dessas Classes.
+Las entidades del juego, como la serpiente, las frutas y el escenario, están representadas por clases. Los objetos son instancias de estas clases.
 
-### Herança:
+### Herencia
 
-A Hierarquia de Classes é utilizada para reutilizar código comum e estabelecer relações de especialização entre as entidades do Jogo. Por exemplo, a Classe Food pode ser Herdada pelas Classes Apple e Pineapple.
+La jerarquía de clases se utiliza para reutilizar código común y establecer relaciones de especialización entre las entidades del juego. Por ejemplo, la clase `Food` puede ser heredada por las clases `Apple` y `Pineapple`.
 
-### Encapsulamento:
+### Encapsulamiento
 
-Os detalhes de implementação de cada classe são encapsulados, definindo Classes Públicas, Privadas e Protegidas. Isso promove a modularidade e facilita a manutenção do código.
+Los detalles de implementación de cada clase están encapsulados, definiendo clases públicas, privadas y protegidas. Esto promueve la modularidad y facilita el mantenimiento del código.
 
-### Abstração:
+### Abstracción
 
-O código é organizado em Classes e Métodos que representam conceitos abstratos do jogo, como a Cobra, as Frutas e o Cenário. Isso simplifica a implementação e torna o código mais compreensível.
+El código está organizado en clases y métodos que representan conceptos abstractos del juego, como la serpiente, las frutas y el escenario. Esto simplifica la implementación y hace que el código sea más comprensible.
 
-### Polimorfismo:
+### Polimorfismo
 
-O jogo utiliza Polimorfismo para tratar Objetos de Classes com diferentes comportamentos com base no Contexto utilizado. Isso contribui para a flexibilidade do código.
+El juego utiliza polimorfismo para manejar objetos de clases con diferentes comportamientos en función del contexto. Esto contribuye a la flexibilidad del código.
 
-## Como Executar o Projeto
+## Cómo Ejecutar el Proyecto
 
-### Pré-requisitos:
+### Requisitos Previos
 
-- JDK (Java Development Kit) instalado.
-- Maven instalado.
-- IDE Java (por exemplo, Eclipse, IntelliJ IDEA, VSCode).
+- Tener instalado el JDK (Java Development Kit).
+- Tener Maven instalado.
+- Tener una IDE para Java (por ejemplo, Eclipse, IntelliJ IDEA, VSCode).
 
-### Iniciando o Projeto:
+### Iniciar el Proyecto
 
-- Clone o repositório do Projeto para o seu ambiente Local.
-- Abra o Terminal na pasta raiz do projeto.
-- Execute o Comando para instalar as Dependências do Maven.
+1. Clona el repositorio del proyecto en tu entorno local.
+2. Abre el terminal en la carpeta raíz del proyecto.
+3. Ejecuta el comando para instalar las dependencias de Maven:
 
 ```
 mvn install
 ```
 
-- Em seguida, execute o Comando para Compilar e Executar o Projeto.
+- A continuación, ejecuta el comando para compilar y ejecutar el proyecto.
 
 ```
 mvn compile javafx:run
 ```
 
-- Após seguir esses passos, o Snake Game será iniciado e você poderá começar a jogar!
+- Después de seguir estos pasos, el Snake Game se iniciará y podrás comenzar a jugar.
 
-## Ambiente de Desenvolvimento:
+## Entorno de Desarrollo:
 
-Este projeto foi desenvolvido utilizando o editor de código Visual Studio Code (VSCode), mas pode ser executado em qualquer IDE Java compatível com Maven.
+Este proyecto fue desarrollado utilizando el editor de código Visual Studio Code (VSCode), pero puede ejecutarse en cualquier IDE Java compatible con Maven.
 
 
 ## SonarQube :
