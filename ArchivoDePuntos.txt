@@ -1,5 +1,5 @@
-Intento 0: 4
-Intento 1: 1
-Intento 2: 6
-Intento 3: 8
-Intento 0: 24
+Iniesta: 3
+Pedro: 0
+Dagoberto: 39
+Rayo: 2
+nahia: 4
