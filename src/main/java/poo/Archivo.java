@@ -1,37 +1,37 @@
 package poo;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Archivo {
 
-    public static void writeScores(Integer score, Integer i) {
-
-        OutputStream os = null;
-        OutputStreamWriter osw = null;
-        BufferedWriter bw = null;
-
-        try {
-
-            os = new FileOutputStream("ArchivoDePuntos.txt", true);
-            osw = new OutputStreamWriter(os);
-            bw = new BufferedWriter(osw);
-
-            bw.write("Puntuacion del intento " + i + ":");
+    public static void writeScore(String nickname, Integer score) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("ArchivoDePuntos.txt", true))) {
+            bw.write(nickname + ": " + score);
             bw.newLine();
-            bw.write(score + "\n");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-        } catch (Exception e) {
-
-            System.out.println(e);
-
-        } finally {
-
-            try {
-                bw.close();
-            } catch (Exception e) {
-                System.out.println(e);
+    public static List<String> getTopScores(int limit) {
+        List<String> scores = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader("ArchivoDePuntos.txt"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                scores.add(line);
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
+        // Ordenar las puntuaciones de mayor a menor
+        scores.sort((a, b) -> Integer.compare(
+                Integer.parseInt(b.split(": ")[1]),
+                Integer.parseInt(a.split(": ")[1])
+        ));
+
+        return scores.size() > limit ? scores.subList(0, limit) : scores;
     }
 }

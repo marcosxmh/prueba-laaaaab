@@ -1,0 +1,5 @@
+Iniesta: 3
+Pedro: 0
+Dagoberto: 39
+Rayo: 2
+nahia: 4

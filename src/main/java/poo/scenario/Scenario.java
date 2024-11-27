@@ -8,13 +8,17 @@ import poo.food.apple.Apple;
 import poo.food.pineapple.Pineapple;
 import poo.key_event_loop.KeyEventLoop;
 import poo.try_again_button.TryAgainButton;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.event.EventHandler;
-import javafx.scene.Node;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.Group;
+import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.geometry.Pos;
 
 public class Scenario {
 
@@ -23,76 +27,106 @@ public class Scenario {
     private Snake snake;
     private Apple apple;
     private Pineapple pineapple;
-    // private Arquivo file = new Arquivo();
+    private String nickname; // Nickname del jugador
 
     public Scenario(Stage primaryStage, Snake snake, Apple apple, Pineapple pineapple) {
-        // Creando la escena
-        this.scene = new Scene(container, Config.width, Config.height); // Group - Ancho - Alto
-        primaryStage.setScene(scene); // Configurando la escena en la clase Scene
-        primaryStage.setTitle("Snake Game - Proyecto POO by Douglas Souza");
-        primaryStage.show(); // Mostrando la ventana
+        // Crear la escena
+        this.scene = new Scene(container, Config.width, Config.height);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Snake Game - Proyecto POO");
+        primaryStage.show();
 
         this.snake = snake;
         this.apple = apple;
         this.pineapple = pineapple;
 
-        // KeyEventLoop keyEventLoop = new KeyEventLoop(this, snake, apple, pineapple);
+        // Mostrar la pantalla inicial para ingresar el nickname
+        pedirNickname(() -> mostrarPlayButton());
+    }
+
+    private void pedirNickname(Runnable onNicknameEntered) {
+        // Limpiar la escena antes de mostrar la pantalla inicial
+        cleanScene();
+
+        // Crear la pantalla para ingresar el nickname
+        VBox nicknamePane = new VBox();
+        nicknamePane.setAlignment(Pos.CENTER);
+        nicknamePane.setSpacing(20);
+
+        Text prompt = new Text("Ingrese su nickname:");
+        TextField nicknameField = new TextField();
+        nicknameField.setPromptText("Nickname");
+        nicknameField.setMaxWidth(300);
+
+        Button continueButton = new Button("Continuar");
+        continueButton.setOnAction(e -> {
+            this.nickname = nicknameField.getText();
+            if (!nickname.isEmpty()) {
+                onNicknameEntered.run(); // Mostrar el PlayButton
+                this.container.getChildren().remove(nicknamePane);
+            }
+        });
+
+        nicknamePane.getChildren().addAll(prompt, nicknameField, continueButton);
+        this.container.getChildren().add(nicknamePane);
+    }
+
+    private void mostrarPlayButton() {
+        cleanScene();
+
+        // Crear el PlayButton
+        PlayButton playButton = new PlayButton(e -> {
+            iniciarJuego();
+        });
+
+        // Agregar el PlayButton a la escena
+        this.container.getChildren().add(playButton);
+    }
+
+    private void iniciarJuego() {
+        cleanScene();
+
+        // Inicializar el KeyEventLoop para manejar eventos de teclado
         new KeyEventLoop(this, snake, apple, pineapple);
 
-        // Botón play que se debe presionar antes para comenzar el juego
-        // Cuando se presiona, agrega la serpiente y las comidas a la escena
-        PlayButton playButton = new PlayButton(e -> {
+        // Agregar elementos iniciales del juego
+        container.getChildren().add(snake.getHead());
+        container.getChildren().add(apple.getApple());
+        container.getChildren().add(pineapple.getPineapple());
+    }
+
+    public void keyPressed(EventHandler<? super KeyEvent> keyAction) {
+        this.scene.setOnKeyPressed(keyAction); // Configura los eventos de teclado
+    }
+
+    public void showGameOver(KeyEventLoop keyEventLoop) {
+        // Guardar el nickname y la puntuación
+        Archivo.writeScore(nickname, Config.score);
+
+        // Crear el botón de reinicio
+        TryAgainButton tryAgainButton = new TryAgainButton(e -> {
+            Config.score = 0; // Reiniciar el puntaje para el nuevo intento
             cleanScene();
+            snake.changeSnakeColor(javafx.scene.paint.Color.GREEN);
 
-            // Colocando el Canvas de la cabeza en una lista Children dentro de container
-            container.getChildren().add(snake.getHead());
-
-            // Colocando el Canvas de apple y pineapple dentro del container
+            // Reagregar elementos iniciales
+            container.getChildren().add(snake.resetGame());
             container.getChildren().add(apple.getApple());
             container.getChildren().add(pineapple.getPineapple());
+
+            // Pedir nuevamente el nickname antes de reiniciar
+            pedirNickname(() -> mostrarPlayButton());
         });
 
-        // Agrega el playButton a la escena
-        this.container.getChildren().addAll(playButton);
-
+        this.container.getChildren().add(tryAgainButton);
     }
 
-    // Método que retorna una acción cuando se presiona cierta tecla
-    public void keyPressed(EventHandler<? super KeyEvent> keyAction) {
-        this.scene.setOnKeyPressed(keyAction);
-    }
-
-    // Método que llama a la clase TryAgainButton
-    public void showGameOver(KeyEventLoop keyEventLoop) {
-        TryAgainButton tryAgainButton = new TryAgainButton(e -> {
-            Integer scoreTotal = Config.score;
-            // file.writeScores(scoreTotal, Config.tries);
-            Archivo.writeScores(scoreTotal, Config.tries); // Escribiendo la puntuación anterior en ArchivoPuntos.txr
-            Config.tries += 1; // Incrementa el número de intentos
-            Config.score = 0; // Igualando la puntuación a 0 para los otros intentos
-            cleanScene();
-            snake.changeSnakeColor(Color.GREEN);
-
-            this.container.getChildren().add(this.snake.resetGame()); // Reagregando instancia de la cabeza
-
-            // Reagregando instancias de apple y pineapple
-            this.container.getChildren().add(apple.getApple());
-            this.container.getChildren().add(pineapple.getPineapple());
-            keyEventLoop.startLoop();
-        });
-
-        this.container.getChildren().add(tryAgainButton); // Agrega el tryAgainButton a la escena
-    }
-
-    // Limpia los elementos de la pantalla cuando ocurre el Game Over
     public void cleanScene() {
-        // Limpiando toda la lista Children de container
-        this.container.getChildren().remove(0, this.container.getChildren().size());
+        // Limpiar todos los elementos de la pantalla
+        this.container.getChildren().clear();
     }
 
-    // La clase Node es el padre de todos los elementos de JavaFX, así que el resto extiende Node
     public void addSnakeBodyPart(Node node) {
-        this.container.getChildren().add(node); // Agrega el parámetro recibido al container
+        this.container.getChildren().add(node);
     }
-
 }
