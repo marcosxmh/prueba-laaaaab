@@ -6,7 +6,7 @@ import poo.food.Food;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.paint.Color;
 
-//Clase para comida Pineapple - Piña
+//Clase para comida Pineapple - Pinya
 public class Pineapple extends Food {
 
     private Canvas pineapple;
