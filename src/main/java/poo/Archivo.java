@@ -2,7 +2,7 @@ package poo;
 
 import java.io.*;
 
-public class Arquivo {
+public class Archivo {
 
     public static void writeScores(Integer score, Integer i) {
 
@@ -12,11 +12,11 @@ public class Arquivo {
 
         try {
 
-            os = new FileOutputStream("ArquivoPontos.txt", true);
+            os = new FileOutputStream("ArchivoDePuntos.txt", true);
             osw = new OutputStreamWriter(os);
             bw = new BufferedWriter(osw);
 
-            bw.write("Pontuações da tentativa " + i + ":");
+            bw.write("Puntuacion del intento " + i + ":");
             bw.newLine();
             bw.write(score + "\n");
 

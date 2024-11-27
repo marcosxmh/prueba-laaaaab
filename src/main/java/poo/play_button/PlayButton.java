@@ -24,7 +24,7 @@ public class PlayButton extends VBox {
         welcome.setFont(Font.font(30));
 
         Text description = new Text(
-                "Observaciones: \nLas manzanas valen 3 puntos y las piñas valen 1 punto. \nUsa las flechas o las teclas W, A, S y D para mover la serpiente!");
+                "Observaciones: \nLas manzanas valen 3 puntos y las pinyas valen 1 punto. \nUsa las flechas o las teclas W, A, S y D para mover la serpiente!");
         description.setFont(Font.font(30));
 
         welcome.setTranslateY(-20);

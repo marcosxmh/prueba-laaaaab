@@ -1,6 +1,6 @@
 package poo.scenario;
 
-import poo.Arquivo;
+import poo.Archivo;
 import poo.play_button.PlayButton;
 import poo.snake.Snake;
 import poo.config.Config;
@@ -67,7 +67,7 @@ public class Scenario {
         TryAgainButton tryAgainButton = new TryAgainButton(e -> {
             Integer scoreTotal = Config.score;
             // file.writeScores(scoreTotal, Config.tries);
-            Arquivo.writeScores(scoreTotal, Config.tries); // Escribiendo la puntuación anterior en ArchivoPuntos.txr
+            Archivo.writeScores(scoreTotal, Config.tries); // Escribiendo la puntuación anterior en ArchivoPuntos.txr
             Config.tries += 1; // Incrementa el número de intentos
             Config.score = 0; // Igualando la puntuación a 0 para los otros intentos
             cleanScene();

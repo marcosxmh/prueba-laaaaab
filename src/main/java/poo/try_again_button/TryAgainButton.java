@@ -23,8 +23,8 @@ public class TryAgainButton extends VBox {
         gameOver.setTranslateY(-80); // Mueve el título hacia arriba
         gameOver.setTextFill(Color.BLACK); // Estableciendo el color del label
 
-        Label scoreText = new Label("Puntuación: " + Config.score);
-        scoreText.setFont(Font.font(40));
+        Label scoreText = new Label("Puntuacion: " + Config.score);
+        scoreText.setFont(Font.font("Arial", 40)); // Especificar la fuente Arial
         scoreText.setTranslateY(-20);
         // scoreText.setTextFill(Color.GREEN);
 
