@@ -11,8 +11,6 @@ import javafx.stage.Stage;
 public class Game extends Application {
 
     public static void main(String[] args) {
-        System.setProperty("file.encoding", "UTF-8");
-        // launch(args); //Comando para executarmos a Application
         Application.launch(Game.class, args);
     }
 
