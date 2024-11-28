@@ -3,3 +3,4 @@ Pedro: 0
 Dagoberto: 39
 Rayo: 2
 nahia: 4
+Pedro: 51
