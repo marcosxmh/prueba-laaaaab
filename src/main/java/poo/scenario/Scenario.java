@@ -20,6 +20,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.geometry.Pos;
 
+/**
+ * @class Scenario
+ * @brief Clase que administra la escena principal del juego, incluyendo pantallas de inicio, juego y finalización.
+ *
+ * Esta clase configura los elementos visuales y lógicos del juego, como la interfaz inicial para ingresar el nickname,
+ * el inicio del juego, y la pantalla de "Game Over". También gestiona los eventos de teclado y la limpieza de la escena.
+ */
 public class Scenario {
 
     private Scene scene; // Escena de JavaFX
@@ -29,6 +36,16 @@ public class Scenario {
     private Pineapple pineapple;
     private String nickname; // Nickname del jugador
 
+    /**
+     * @brief Constructor de la clase Scenario.
+     *
+     * Inicializa la escena principal, asigna la ventana de la aplicación, y muestra la pantalla inicial.
+     *
+     * @param primaryStage Ventana principal de la aplicación.
+     * @param snake Objeto que representa la serpiente.
+     * @param apple Objeto que representa la manzana.
+     * @param pineapple Objeto que representa la piña.
+     */
     public Scenario(Stage primaryStage, Snake snake, Apple apple, Pineapple pineapple) {
         // Crear la escena
         this.scene = new Scene(container, Config.width, Config.height);
@@ -44,6 +61,13 @@ public class Scenario {
         pedirNickname(() -> mostrarPlayButton());
     }
 
+    /**
+     * @brief Muestra una interfaz para que el jugador ingrese su nickname.
+     *
+     * Una vez ingresado el nickname, llama a la función proporcionada como parámetro.
+     *
+     * @param onNicknameEntered Acción a ejecutar después de que se ingrese el nickname.
+     */
     private void pedirNickname(Runnable onNicknameEntered) {
         // Limpiar la escena antes de mostrar la pantalla inicial
         cleanScene();
@@ -71,6 +95,9 @@ public class Scenario {
         this.container.getChildren().add(nicknamePane);
     }
 
+    /**
+     * @brief Muestra la pantalla del botón de inicio del juego.
+     */
     private void mostrarPlayButton() {
         cleanScene();
 
@@ -83,6 +110,9 @@ public class Scenario {
         this.container.getChildren().add(playButton);
     }
 
+    /**
+     * @brief Inicia el juego, incluyendo la configuración de los eventos de teclado y los elementos iniciales.
+     */
     private void iniciarJuego() {
         cleanScene();
 
@@ -95,10 +125,20 @@ public class Scenario {
         container.getChildren().add(pineapple.getPineapple());
     }
 
+    /**
+     * @brief Configura el manejo de eventos de teclado en la escena.
+     *
+     * @param keyAction Acción a realizar cuando se presiona una tecla.
+     */
     public void keyPressed(EventHandler<? super KeyEvent> keyAction) {
         this.scene.setOnKeyPressed(keyAction); // Configura los eventos de teclado
     }
 
+    /**
+     * @brief Muestra la pantalla de "Game Over" y reinicia el juego si el jugador decide intentarlo nuevamente.
+     *
+     * @param keyEventLoop Referencia al bucle de eventos actual del juego.
+     */
     public void showGameOver(KeyEventLoop keyEventLoop) {
         // Guardar el nickname y la puntuación
         Archivo.writeScore(nickname, Config.score);
@@ -121,11 +161,19 @@ public class Scenario {
         this.container.getChildren().add(tryAgainButton);
     }
 
+    /**
+     * @brief Limpia todos los elementos visibles en la escena.
+     */
     public void cleanScene() {
         // Limpiar todos los elementos de la pantalla
         this.container.getChildren().clear();
     }
 
+    /**
+     * @brief Agrega una nueva parte al cuerpo de la serpiente en la escena.
+     *
+     * @param node Nodo gráfico que representa la nueva parte de la serpiente.
+     */
     public void addSnakeBodyPart(Node node) {
         this.container.getChildren().add(node);
     }
