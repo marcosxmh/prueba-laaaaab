@@ -1,0 +1,5 @@
+<map id="poo.food.apple.Apple" name="poo.food.apple.Apple">
+<area shape="rect" id="Node000001" title="Representa una comida tipo &quot;manzana&quot; en el juego de la serpiente." alt="" coords="5,80,149,107"/>
+<area shape="rect" id="Node000002" href="$classpoo_1_1food_1_1_food.html" title="Clase abstracta que define la estructura básica para los objetos de tipo comida en el juego de la ser..." alt="" coords="25,5,129,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,48,80,80,74,80,74,48"/>
+</map>

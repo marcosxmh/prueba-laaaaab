@@ -1,0 +1,10 @@
+<map id="poo.snake.Snake.changeSnakeColor" name="poo.snake.Snake.changeSnakeColor">
+<area shape="rect" id="Node000001" title="Cambia el color de la serpiente." alt="" coords="478,48,683,91"/>
+<area shape="rect" id="Node000002" href="$classpoo_1_1snake_1_1_snake.html#a23c35d37fddc4765cc9637af6c817770" title="Cambia el color de la serpiente a negro, indicando su muerte." alt="" coords="239,5,430,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="462,48,402,35,403,30,463,42"/>
+<area shape="rect" id="Node000003" href="$classpoo_1_1snake_1_1_snake.html#a6d335c53cc4186c9be8962105381606f" title="Reinicia la posición y el estado de la serpiente al centro." alt="" coords="239,56,430,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="462,72,430,72,430,67,462,67"/>
+<area shape="rect" id="Node000004" href="$classpoo_1_1scenario_1_1_scenario.html#a1f48e67d2d5753aeb5a5c54ffa271190" title="Muestra la pantalla de &quot;Game Over&quot; y reinicia el juego si el jugador decide intentarlo nuevamente." alt="" coords="5,73,191,116"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="463,94,430,97,305,103,191,101,191,96,305,97,430,92,462,88"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="224,84,191,87,191,82,223,79"/>
+</map>

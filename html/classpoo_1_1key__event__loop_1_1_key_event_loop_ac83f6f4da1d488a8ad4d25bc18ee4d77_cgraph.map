@@ -1,0 +1,9 @@
+<map id="poo.key_event_loop.KeyEventLoop.startLoop" name="poo.key_event_loop.KeyEventLoop.startLoop">
+<area shape="rect" id="Node000001" title="Inicia el bucle principal del juego, donde se maneja el movimiento de la serpiente y las colisiones." alt="" coords="5,56,204,99"/>
+<area shape="rect" id="Node000002" href="$classpoo_1_1snake_1_1_snake.html#ae1bf24dfe49baf4be98d3d6d4d72457a" title="Verifica si la cabeza de la serpiente colisiona con su cuerpo." alt="" coords="256,5,460,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,53,282,34,283,39,200,58"/>
+<area shape="rect" id="Node000003" href="$classpoo_1_1food_1_1pineapple_1_1_pineapple.html#a673aee186a15829ee2a8a23c0cba2565" title=" " alt="" coords="252,56,465,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,75,236,75,236,80,204,80"/>
+<area shape="rect" id="Node000004" href="$classpoo_1_1food_1_1pineapple_1_1_pineapple.html#af5f8671864a68f7e66cc1f6547fa8d70" title=" " alt="" coords="252,123,465,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="189,97,260,116,259,121,188,102"/>
+</map>

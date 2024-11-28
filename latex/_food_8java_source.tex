@@ -1,0 +1,25 @@
+\doxysection{Food.\+java}
+\hypertarget{_food_8java_source}{}\label{_food_8java_source}\index{C:/tmp/Proyecto-\/LAB\_/src/main/java/poo/food/Food.java@{C:/tmp/Proyecto-\/LAB\_/src/main/java/poo/food/Food.java}}
+\mbox{\hyperlink{_food_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00001}00001\ \textcolor{keyword}{package\ }poo.food;}
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacepoo}{poo}}.\mbox{\hyperlink{namespacepoo_1_1config}{config}}.\mbox{\hyperlink{classpoo_1_1config_1_1_config}{Config}};}
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00012}\mbox{\hyperlink{classpoo_1_1food_1_1_food}{00012}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{abstract}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classpoo_1_1food_1_1_food}{Food}}\ \{}
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00020}\mbox{\hyperlink{classpoo_1_1food_1_1_food_a26087bb759a150bf7d5da72f2b973f7b}{00020}}\ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{abstract}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classpoo_1_1food_1_1_food_a26087bb759a150bf7d5da72f2b973f7b}{creatingFood}}();}
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00032}\mbox{\hyperlink{classpoo_1_1food_1_1_food_af265cf2b621530449148f4fe13b3f0d5}{00032}}\ \ \ \ \ \textcolor{keyword}{public}\ Integer\ \mbox{\hyperlink{classpoo_1_1food_1_1_food_af265cf2b621530449148f4fe13b3f0d5}{randomNumbers}}(Integer\ min,\ Integer\ max)\ \{}
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ value\ =\ (int)\ (Math.random()\ *\ ((max\ -\/\ min)\ +\ 1))\ +\ min;}
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Necesitamos\ obtener\ un\ valor\ que\ sea\ múltiplo\ de\ 40\ para\ que\ se\ ajuste\ a\ la\ pantalla}}
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ value\ -\/\ (value\ \%\ \mbox{\hyperlink{classpoo_1_1config_1_1_config}{Config}}.\mbox{\hyperlink{classpoo_1_1config_1_1_config_a31dd367f1e9e7496fba929203ad2593a}{squareSize}});}
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00047}\mbox{\hyperlink{classpoo_1_1food_1_1_food_adf313aca631939fd1d6dccc564ac59e6}{00047}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{abstract}\ Integer\ \mbox{\hyperlink{classpoo_1_1food_1_1_food_adf313aca631939fd1d6dccc564ac59e6}{getPosicionX}}();}
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00057}\mbox{\hyperlink{classpoo_1_1food_1_1_food_a8dc737f70c9a664105114030e05746e5}{00057}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{abstract}\ Integer\ \mbox{\hyperlink{classpoo_1_1food_1_1_food_a8dc737f70c9a664105114030e05746e5}{getPosicionY}}();}
+\DoxyCodeLine{\Hypertarget{_food_8java_source_l00058}00058\ \}}
+
+\end{DoxyCode}

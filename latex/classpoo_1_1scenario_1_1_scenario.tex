@@ -1,0 +1,198 @@
+\doxysection{poo.\+scenario.\+Scenario Class Reference}
+\hypertarget{classpoo_1_1scenario_1_1_scenario}{}\label{classpoo_1_1scenario_1_1_scenario}\index{poo.scenario.Scenario@{poo.scenario.Scenario}}
+
+
+Clase que administra la escena principal del juego, incluyendo pantallas de inicio, juego y finalización.  
+
+
+
+
+Collaboration diagram for poo.\+scenario.\+Scenario\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classpoo_1_1scenario_1_1_scenario__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_ad458c4b943b044d57ab62520895eaa26}{Scenario}} (Stage primary\+Stage, \mbox{\hyperlink{classpoo_1_1snake_1_1_snake}{Snake}} snake, \mbox{\hyperlink{classpoo_1_1food_1_1apple_1_1_apple}{Apple}} apple, \mbox{\hyperlink{classpoo_1_1food_1_1pineapple_1_1_pineapple}{Pineapple}} pineapple)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{classpoo_1_1scenario_1_1_scenario}{Scenario}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a924e53536f8409d0251577be638bd47b}{key\+Pressed}} (Event\+Handler$<$? super Key\+Event $>$ key\+Action)
+\begin{DoxyCompactList}\small\item\em Configura el manejo de eventos de teclado en la escena. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a1f48e67d2d5753aeb5a5c54ffa271190}{show\+Game\+Over}} (\mbox{\hyperlink{classpoo_1_1key__event__loop_1_1_key_event_loop}{Key\+Event\+Loop}} key\+Event\+Loop)
+\begin{DoxyCompactList}\small\item\em Muestra la pantalla de "{}\+Game Over"{} y reinicia el juego si el jugador decide intentarlo nuevamente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a21c15cad1a8b1920d5e6033769cb27e2}{clean\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Limpia todos los elementos visibles en la escena. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a1bc9d2122845aec407d2528d8bb7022e}{add\+Snake\+Body\+Part}} (Node node)
+\begin{DoxyCompactList}\small\item\em Agrega una nueva parte al cuerpo de la serpiente en la escena. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Group \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a6cb0b72f6fe4acc7acaba486e646c81f}{container}} = new Group()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que administra la escena principal del juego, incluyendo pantallas de inicio, juego y finalización. 
+
+Esta clase configura los elementos visuales y lógicos del juego, como la interfaz inicial para ingresar el nickname, el inicio del juego, y la pantalla de "{}\+Game Over"{}. También gestiona los eventos de teclado y la limpieza de la escena. 
+
+Definition at line \mbox{\hyperlink{_scenario_8java_source_l00030}{30}} of file \mbox{\hyperlink{_scenario_8java_source}{Scenario.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpoo_1_1scenario_1_1_scenario_ad458c4b943b044d57ab62520895eaa26}\index{poo.scenario.Scenario@{poo.scenario.Scenario}!Scenario@{Scenario}}
+\index{Scenario@{Scenario}!poo.scenario.Scenario@{poo.scenario.Scenario}}
+\doxysubsubsection{\texorpdfstring{Scenario()}{Scenario()}}
+{\footnotesize\ttfamily \label{classpoo_1_1scenario_1_1_scenario_ad458c4b943b044d57ab62520895eaa26} 
+poo.\+scenario.\+Scenario.\+Scenario (\begin{DoxyParamCaption}\item[{Stage}]{primary\+Stage}{, }\item[{\mbox{\hyperlink{classpoo_1_1snake_1_1_snake}{Snake}}}]{snake}{, }\item[{\mbox{\hyperlink{classpoo_1_1food_1_1apple_1_1_apple}{Apple}}}]{apple}{, }\item[{\mbox{\hyperlink{classpoo_1_1food_1_1pineapple_1_1_pineapple}{Pineapple}}}]{pineapple}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxylink{classpoo_1_1scenario_1_1_scenario}{Scenario}. 
+
+Inicializa la escena principal, asigna la ventana de la aplicación, y muestra la pantalla inicial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em primary\+Stage} & Ventana principal de la aplicación. \\
+\hline
+{\em snake} & Objeto que representa la serpiente. \\
+\hline
+{\em apple} & Objeto que representa la manzana. \\
+\hline
+{\em pineapple} & Objeto que representa la piña. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_scenario_8java_source_l00049}{49}} of file \mbox{\hyperlink{_scenario_8java_source}{Scenario.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpoo_1_1scenario_1_1_scenario_a1bc9d2122845aec407d2528d8bb7022e}\index{poo.scenario.Scenario@{poo.scenario.Scenario}!addSnakeBodyPart@{addSnakeBodyPart}}
+\index{addSnakeBodyPart@{addSnakeBodyPart}!poo.scenario.Scenario@{poo.scenario.Scenario}}
+\doxysubsubsection{\texorpdfstring{addSnakeBodyPart()}{addSnakeBodyPart()}}
+{\footnotesize\ttfamily \label{classpoo_1_1scenario_1_1_scenario_a1bc9d2122845aec407d2528d8bb7022e} 
+void poo.\+scenario.\+Scenario.\+add\+Snake\+Body\+Part (\begin{DoxyParamCaption}\item[{Node}]{node}{}\end{DoxyParamCaption})}
+
+
+
+Agrega una nueva parte al cuerpo de la serpiente en la escena. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Nodo gráfico que representa la nueva parte de la serpiente. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_scenario_8java_source_l00177}{177}} of file \mbox{\hyperlink{_scenario_8java_source}{Scenario.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1scenario_1_1_scenario_a1bc9d2122845aec407d2528d8bb7022e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classpoo_1_1scenario_1_1_scenario_a21c15cad1a8b1920d5e6033769cb27e2}\index{poo.scenario.Scenario@{poo.scenario.Scenario}!cleanScene@{cleanScene}}
+\index{cleanScene@{cleanScene}!poo.scenario.Scenario@{poo.scenario.Scenario}}
+\doxysubsubsection{\texorpdfstring{cleanScene()}{cleanScene()}}
+{\footnotesize\ttfamily \label{classpoo_1_1scenario_1_1_scenario_a21c15cad1a8b1920d5e6033769cb27e2} 
+void poo.\+scenario.\+Scenario.\+clean\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Limpia todos los elementos visibles en la escena. 
+
+
+
+Definition at line \mbox{\hyperlink{_scenario_8java_source_l00167}{167}} of file \mbox{\hyperlink{_scenario_8java_source}{Scenario.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1scenario_1_1_scenario_a21c15cad1a8b1920d5e6033769cb27e2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classpoo_1_1scenario_1_1_scenario_a924e53536f8409d0251577be638bd47b}\index{poo.scenario.Scenario@{poo.scenario.Scenario}!keyPressed@{keyPressed}}
+\index{keyPressed@{keyPressed}!poo.scenario.Scenario@{poo.scenario.Scenario}}
+\doxysubsubsection{\texorpdfstring{keyPressed()}{keyPressed()}}
+{\footnotesize\ttfamily \label{classpoo_1_1scenario_1_1_scenario_a924e53536f8409d0251577be638bd47b} 
+void poo.\+scenario.\+Scenario.\+key\+Pressed (\begin{DoxyParamCaption}\item[{Event\+Handler$<$? super Key\+Event $>$}]{key\+Action}{}\end{DoxyParamCaption})}
+
+
+
+Configura el manejo de eventos de teclado en la escena. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Action} & Acción a realizar cuando se presiona una tecla. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_scenario_8java_source_l00133}{133}} of file \mbox{\hyperlink{_scenario_8java_source}{Scenario.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1scenario_1_1_scenario_a924e53536f8409d0251577be638bd47b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classpoo_1_1scenario_1_1_scenario_a1f48e67d2d5753aeb5a5c54ffa271190}\index{poo.scenario.Scenario@{poo.scenario.Scenario}!showGameOver@{showGameOver}}
+\index{showGameOver@{showGameOver}!poo.scenario.Scenario@{poo.scenario.Scenario}}
+\doxysubsubsection{\texorpdfstring{showGameOver()}{showGameOver()}}
+{\footnotesize\ttfamily \label{classpoo_1_1scenario_1_1_scenario_a1f48e67d2d5753aeb5a5c54ffa271190} 
+void poo.\+scenario.\+Scenario.\+show\+Game\+Over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpoo_1_1key__event__loop_1_1_key_event_loop}{Key\+Event\+Loop}}}]{key\+Event\+Loop}{}\end{DoxyParamCaption})}
+
+
+
+Muestra la pantalla de "{}\+Game Over"{} y reinicia el juego si el jugador decide intentarlo nuevamente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Event\+Loop} & Referencia al bucle de eventos actual del juego. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_scenario_8java_source_l00142}{142}} of file \mbox{\hyperlink{_scenario_8java_source}{Scenario.\+java}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1scenario_1_1_scenario_a1f48e67d2d5753aeb5a5c54ffa271190_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpoo_1_1scenario_1_1_scenario_a6cb0b72f6fe4acc7acaba486e646c81f}\index{poo.scenario.Scenario@{poo.scenario.Scenario}!container@{container}}
+\index{container@{container}!poo.scenario.Scenario@{poo.scenario.Scenario}}
+\doxysubsubsection{\texorpdfstring{container}{container}}
+{\footnotesize\ttfamily \label{classpoo_1_1scenario_1_1_scenario_a6cb0b72f6fe4acc7acaba486e646c81f} 
+Group poo.\+scenario.\+Scenario.\+container = new Group()}
+
+
+
+Definition at line \mbox{\hyperlink{_scenario_8java_source_l00033}{33}} of file \mbox{\hyperlink{_scenario_8java_source}{Scenario.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/tmp/\+Proyecto-\/\+LAB\+\_\+/src/main/java/poo/scenario/\mbox{\hyperlink{_scenario_8java}{Scenario.\+java}}\end{DoxyCompactItemize}

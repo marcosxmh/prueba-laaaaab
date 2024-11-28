@@ -1,0 +1,5 @@
+<map id="poo.snake.Snake.resetGame" name="poo.snake.Snake.resetGame">
+<area shape="rect" id="Node000001" title="Reinicia la posición y el estado de la serpiente al centro." alt="" coords="239,13,429,40"/>
+<area shape="rect" id="Node000002" href="$classpoo_1_1scenario_1_1_scenario.html#a1f48e67d2d5753aeb5a5c54ffa271190" title="Muestra la pantalla de &quot;Game Over&quot; y reinicia el juego si el jugador decide intentarlo nuevamente." alt="" coords="5,5,191,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,29,191,29,191,24,223,24"/>
+</map>

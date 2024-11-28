@@ -1,0 +1,138 @@
+\doxysection{Scenario.\+java}
+\hypertarget{_scenario_8java_source}{}\label{_scenario_8java_source}\index{C:/tmp/Proyecto-\/LAB\_/src/main/java/poo/scenario/Scenario.java@{C:/tmp/Proyecto-\/LAB\_/src/main/java/poo/scenario/Scenario.java}}
+\mbox{\hyperlink{_scenario_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00001}\mbox{\hyperlink{namespacepoo_1_1scenario}{00001}}\ \textcolor{keyword}{package\ }poo.scenario;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacepoo}{poo}}.\mbox{\hyperlink{classpoo_1_1_archivo}{Archivo}};}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00004}00004\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacepoo}{poo}}.\mbox{\hyperlink{namespacepoo_1_1play__button}{play\_button}}.\mbox{\hyperlink{classpoo_1_1play__button_1_1_play_button}{PlayButton}};}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00005}00005\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacepoo}{poo}}.\mbox{\hyperlink{namespacepoo_1_1snake}{snake}}.\mbox{\hyperlink{classpoo_1_1snake_1_1_snake}{Snake}};}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00006}00006\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacepoo}{poo}}.\mbox{\hyperlink{namespacepoo_1_1config}{config}}.\mbox{\hyperlink{classpoo_1_1config_1_1_config}{Config}};}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00007}00007\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacepoo}{poo}}.\mbox{\hyperlink{namespacepoo_1_1food}{food}}.\mbox{\hyperlink{namespacepoo_1_1food_1_1apple}{apple}}.\mbox{\hyperlink{classpoo_1_1food_1_1apple_1_1_apple}{Apple}};}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00008}00008\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacepoo}{poo}}.\mbox{\hyperlink{namespacepoo_1_1food}{food}}.\mbox{\hyperlink{namespacepoo_1_1food_1_1pineapple}{pineapple}}.\mbox{\hyperlink{classpoo_1_1food_1_1pineapple_1_1_pineapple}{Pineapple}};}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00009}00009\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacepoo}{poo}}.\mbox{\hyperlink{namespacepoo_1_1key__event__loop}{key\_event\_loop}}.\mbox{\hyperlink{classpoo_1_1key__event__loop_1_1_key_event_loop}{KeyEventLoop}};}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00010}00010\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacepoo}{poo}}.\mbox{\hyperlink{namespacepoo_1_1try__again__button}{try\_again\_button}}.\mbox{\hyperlink{classpoo_1_1try__again__button_1_1_try_again_button}{TryAgainButton}};}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00011}00011\ \textcolor{keyword}{import}\ javafx.scene.control.Button;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00012}00012\ \textcolor{keyword}{import}\ javafx.scene.control.TextField;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00013}00013\ \textcolor{keyword}{import}\ javafx.scene.layout.VBox;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00014}00014\ \textcolor{keyword}{import}\ javafx.scene.text.Text;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00015}00015\ \textcolor{keyword}{import}\ javafx.event.EventHandler;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00016}00016\ \textcolor{keyword}{import}\ javafx.scene.input.KeyEvent;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00017}00017\ \textcolor{keyword}{import}\ javafx.scene.Group;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00018}00018\ \textcolor{keyword}{import}\ javafx.scene.Node;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00019}00019\ \textcolor{keyword}{import}\ javafx.scene.Scene;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00020}00020\ \textcolor{keyword}{import}\ javafx.stage.Stage;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00021}00021\ \textcolor{keyword}{import}\ javafx.geometry.Pos;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00030}\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario}{00030}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario}{Scenario}}\ \{}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00032}00032\ \ \ \ \ \textcolor{keyword}{private}\ Scene\ scene;\ \textcolor{comment}{//\ Escena\ de\ JavaFX}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00033}\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a6cb0b72f6fe4acc7acaba486e646c81f}{00033}}\ \ \ \ \ \textcolor{keyword}{public}\ Group\ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a6cb0b72f6fe4acc7acaba486e646c81f}{container}}\ =\ \textcolor{keyword}{new}\ Group();\ \textcolor{comment}{//\ Contiene\ todos\ los\ elementos\ que\ estarán\ en\ la\ escena}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00034}00034\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{classpoo_1_1snake_1_1_snake}{Snake}}\ snake;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00035}00035\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{classpoo_1_1food_1_1apple_1_1_apple}{Apple}}\ apple;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00036}00036\ \ \ \ \ \textcolor{keyword}{private}\ \mbox{\hyperlink{classpoo_1_1food_1_1pineapple_1_1_pineapple}{Pineapple}}\ pineapple;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00037}00037\ \ \ \ \ \textcolor{keyword}{private}\ String\ nickname;\ \textcolor{comment}{//\ Nickname\ del\ jugador}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00049}\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_ad458c4b943b044d57ab62520895eaa26}{00049}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_ad458c4b943b044d57ab62520895eaa26}{Scenario}}(Stage\ primaryStage,\ \mbox{\hyperlink{classpoo_1_1snake_1_1_snake}{Snake}}\ snake,\ \mbox{\hyperlink{classpoo_1_1food_1_1apple_1_1_apple}{Apple}}\ apple,\ \mbox{\hyperlink{classpoo_1_1food_1_1pineapple_1_1_pineapple}{Pineapple}}\ pineapple)\ \{}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00050}00050\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Crear\ la\ escena}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00051}00051\ \ \ \ \ \ \ \ \ this.scene\ =\ \textcolor{keyword}{new}\ Scene(\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a6cb0b72f6fe4acc7acaba486e646c81f}{container}},\ \mbox{\hyperlink{classpoo_1_1config_1_1_config}{Config}}.\mbox{\hyperlink{classpoo_1_1config_1_1_config_abda0a8327242b473a499de51cae99e38}{width}},\ \mbox{\hyperlink{classpoo_1_1config_1_1_config}{Config}}.\mbox{\hyperlink{classpoo_1_1config_1_1_config_a86f729467f1bdeeea4f396510b3a7735}{height}});}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00052}00052\ \ \ \ \ \ \ \ \ primaryStage.setScene(scene);}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00053}00053\ \ \ \ \ \ \ \ \ primaryStage.setTitle(\textcolor{stringliteral}{"{}Snake\ Game\ -\/\ Proyecto\ POO"{}});}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00054}00054\ \ \ \ \ \ \ \ \ primaryStage.show();}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00056}00056\ \ \ \ \ \ \ \ \ this.snake\ =\ snake;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00057}00057\ \ \ \ \ \ \ \ \ this.apple\ =\ apple;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00058}00058\ \ \ \ \ \ \ \ \ this.pineapple\ =\ pineapple;}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00060}00060\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Mostrar\ la\ pantalla\ inicial\ para\ ingresar\ el\ nickname}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00061}00061\ \ \ \ \ \ \ \ \ pedirNickname(()\ -\/>\ mostrarPlayButton());}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00062}00062\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00071}00071\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ pedirNickname(Runnable\ onNicknameEntered)\ \{}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00072}00072\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Limpiar\ la\ escena\ antes\ de\ mostrar\ la\ pantalla\ inicial}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00073}00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a21c15cad1a8b1920d5e6033769cb27e2}{cleanScene}}();}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Crear\ la\ pantalla\ para\ ingresar\ el\ nickname}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00076}00076\ \ \ \ \ \ \ \ \ VBox\ nicknamePane\ =\ \textcolor{keyword}{new}\ VBox();}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00077}00077\ \ \ \ \ \ \ \ \ nicknamePane.setAlignment(Pos.CENTER);}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00078}00078\ \ \ \ \ \ \ \ \ nicknamePane.setSpacing(20);}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00080}00080\ \ \ \ \ \ \ \ \ Text\ prompt\ =\ \textcolor{keyword}{new}\ Text(\textcolor{stringliteral}{"{}Ingrese\ su\ nickname:"{}});}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00081}00081\ \ \ \ \ \ \ \ \ TextField\ nicknameField\ =\ \textcolor{keyword}{new}\ TextField();}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00082}00082\ \ \ \ \ \ \ \ \ nicknameField.setPromptText(\textcolor{stringliteral}{"{}Nickname"{}});}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00083}00083\ \ \ \ \ \ \ \ \ nicknameField.setMaxWidth(300);}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00085}00085\ \ \ \ \ \ \ \ \ Button\ continueButton\ =\ \textcolor{keyword}{new}\ Button(\textcolor{stringliteral}{"{}Continuar"{}});}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00086}00086\ \ \ \ \ \ \ \ \ continueButton.setOnAction(e\ -\/>\ \{}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ this.nickname\ =\ nicknameField.getText();}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!nickname.isEmpty())\ \{}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ onNicknameEntered.run();\ \textcolor{comment}{//\ Mostrar\ el\ PlayButton}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.container.getChildren().remove(nicknamePane);}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00092}00092\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00094}00094\ \ \ \ \ \ \ \ \ nicknamePane.getChildren().addAll(prompt,\ nicknameField,\ continueButton);}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00095}00095\ \ \ \ \ \ \ \ \ this.container.getChildren().add(nicknamePane);}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00096}00096\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00101}00101\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ mostrarPlayButton()\ \{}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00102}00102\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a21c15cad1a8b1920d5e6033769cb27e2}{cleanScene}}();}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00104}00104\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Crear\ el\ PlayButton}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00105}00105\ \ \ \ \ \ \ \ \ PlayButton\ playButton\ =\ \textcolor{keyword}{new}\ PlayButton(e\ -\/>\ \{}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ iniciarJuego();}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00107}00107\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00109}00109\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Agregar\ el\ PlayButton\ a\ la\ escena}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00110}00110\ \ \ \ \ \ \ \ \ this.container.getChildren().add(playButton);}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00111}00111\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00116}00116\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keywordtype}{void}\ iniciarJuego()\ \{}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00117}00117\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a21c15cad1a8b1920d5e6033769cb27e2}{cleanScene}}();}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00119}00119\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Inicializar\ el\ KeyEventLoop\ para\ manejar\ eventos\ de\ teclado}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00120}00120\ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ KeyEventLoop(\textcolor{keyword}{this},\ snake,\ apple,\ pineapple);}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00122}00122\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Agregar\ elementos\ iniciales\ del\ juego}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00123}00123\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a6cb0b72f6fe4acc7acaba486e646c81f}{container}}.getChildren().add(snake.\mbox{\hyperlink{classpoo_1_1snake_1_1_snake_a5ca271cfd2412fdd38fb599e4e41ca8b}{getHead}}());}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00124}00124\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a6cb0b72f6fe4acc7acaba486e646c81f}{container}}.getChildren().add(apple.\mbox{\hyperlink{classpoo_1_1food_1_1apple_1_1_apple_a59292366a030f991b8156ad971d4c4bd}{getApple}}());}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00125}00125\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a6cb0b72f6fe4acc7acaba486e646c81f}{container}}.getChildren().add(pineapple.\mbox{\hyperlink{classpoo_1_1food_1_1pineapple_1_1_pineapple_a326f8dba52a390b2143218183f6eb52e}{getPineapple}}());}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00126}00126\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00133}\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a924e53536f8409d0251577be638bd47b}{00133}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a924e53536f8409d0251577be638bd47b}{keyPressed}}(EventHandler<?\ super\ KeyEvent>\ keyAction)\ \{}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00134}00134\ \ \ \ \ \ \ \ \ this.scene.setOnKeyPressed(keyAction);\ \textcolor{comment}{//\ Configura\ los\ eventos\ de\ teclado}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00135}00135\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00136}00136\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00142}\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a1f48e67d2d5753aeb5a5c54ffa271190}{00142}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a1f48e67d2d5753aeb5a5c54ffa271190}{showGameOver}}(\mbox{\hyperlink{classpoo_1_1key__event__loop_1_1_key_event_loop}{KeyEventLoop}}\ keyEventLoop)\ \{}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00143}00143\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Guardar\ el\ nickname\ y\ la\ puntuación}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00144}00144\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpoo_1_1_archivo}{Archivo}}.\mbox{\hyperlink{classpoo_1_1_archivo_aa2adc2d749a20e40d42c92ba54611664}{writeScore}}(nickname,\ \mbox{\hyperlink{classpoo_1_1config_1_1_config}{Config}}.\mbox{\hyperlink{classpoo_1_1config_1_1_config_a9fd1a75f06540a26a7d8c41ffb5b9216}{score}});}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00145}00145\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00146}00146\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Crear\ el\ botón\ de\ reinicio}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00147}00147\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpoo_1_1try__again__button_1_1_try_again_button}{TryAgainButton}}\ tryAgainButton\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classpoo_1_1try__again__button_1_1_try_again_button}{TryAgainButton}}(e\ -\/>\ \{}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ Config.score\ =\ 0;\ \textcolor{comment}{//\ Reiniciar\ el\ puntaje\ para\ el\ nuevo\ intento}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00149}00149\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a21c15cad1a8b1920d5e6033769cb27e2}{cleanScene}}();}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00150}00150\ \ \ \ \ \ \ \ \ \ \ \ \ snake.\mbox{\hyperlink{classpoo_1_1snake_1_1_snake_a476b17fce3361d49b7b40d24413e4b06}{changeSnakeColor}}(javafx.scene.paint.Color.GREEN);}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00151}00151\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00152}00152\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Reagregar\ elementos\ iniciales}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00153}00153\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a6cb0b72f6fe4acc7acaba486e646c81f}{container}}.getChildren().add(snake.\mbox{\hyperlink{classpoo_1_1snake_1_1_snake_a6d335c53cc4186c9be8962105381606f}{resetGame}}());}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00154}00154\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a6cb0b72f6fe4acc7acaba486e646c81f}{container}}.getChildren().add(apple.\mbox{\hyperlink{classpoo_1_1food_1_1apple_1_1_apple_a59292366a030f991b8156ad971d4c4bd}{getApple}}());}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00155}00155\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a6cb0b72f6fe4acc7acaba486e646c81f}{container}}.getChildren().add(pineapple.\mbox{\hyperlink{classpoo_1_1food_1_1pineapple_1_1_pineapple_a326f8dba52a390b2143218183f6eb52e}{getPineapple}}());}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00156}00156\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00157}00157\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Pedir\ nuevamente\ el\ nickname\ antes\ de\ reiniciar}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00158}00158\ \ \ \ \ \ \ \ \ \ \ \ \ pedirNickname(()\ -\/>\ mostrarPlayButton());}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00159}00159\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00160}00160\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00161}00161\ \ \ \ \ \ \ \ \ this.container.getChildren().add(tryAgainButton);}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00162}00162\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00163}00163\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00167}\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a21c15cad1a8b1920d5e6033769cb27e2}{00167}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a21c15cad1a8b1920d5e6033769cb27e2}{cleanScene}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00168}00168\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Limpiar\ todos\ los\ elementos\ de\ la\ pantalla}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00169}00169\ \ \ \ \ \ \ \ \ this.container.getChildren().clear();}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00170}00170\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00177}\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a1bc9d2122845aec407d2528d8bb7022e}{00177}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario_a1bc9d2122845aec407d2528d8bb7022e}{addSnakeBodyPart}}(Node\ node)\ \{}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00178}00178\ \ \ \ \ \ \ \ \ this.container.getChildren().add(node);}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00179}00179\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_scenario_8java_source_l00180}00180\ \}}
+
+\end{DoxyCode}

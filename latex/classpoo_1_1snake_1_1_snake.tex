@@ -1,0 +1,346 @@
+\doxysection{poo.\+snake.\+Snake Class Reference}
+\hypertarget{classpoo_1_1snake_1_1_snake}{}\label{classpoo_1_1snake_1_1_snake}\index{poo.snake.Snake@{poo.snake.Snake}}
+
+
+Clase que representa la serpiente en el juego.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpoo_1_1snake_1_1_snake_afc08b4d9ce2dbaa8145c2f2063bc27cb}{Snake}} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{classpoo_1_1snake_1_1_snake}{Snake}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpoo_1_1snake_1_1_snake_a9297c74875e2a5f5dc813eb29a0a5fc7}{set\+Head\+On\+Center}} ()
+\begin{DoxyCompactList}\small\item\em Centra la cabeza de la serpiente en la escena. \end{DoxyCompactList}\item 
+Canvas \mbox{\hyperlink{classpoo_1_1snake_1_1_snake_a5ca271cfd2412fdd38fb599e4e41ca8b}{get\+Head}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el Canvas de la cabeza de la serpiente. \end{DoxyCompactList}\item 
+Integer \mbox{\hyperlink{classpoo_1_1snake_1_1_snake_a06057336b2cf56c790bbf6a6ef71ad17}{get\+PosicionX}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la posición X de la cabeza de la serpiente. \end{DoxyCompactList}\item 
+Integer \mbox{\hyperlink{classpoo_1_1snake_1_1_snake_afc32094571b3c0ec067df0deef709c0b}{get\+PosicionY}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la posición Y de la cabeza de la serpiente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpoo_1_1snake_1_1_snake_a21ef7c78d7414e6941cf6c6172e6da6b}{set\+Position}} (Integer x, Integer y)
+\begin{DoxyCompactList}\small\item\em Actualiza la posición de la cabeza y el cuerpo de la serpiente. \end{DoxyCompactList}\item 
+Canvas \mbox{\hyperlink{classpoo_1_1snake_1_1_snake_a6d335c53cc4186c9be8962105381606f}{reset\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Reinicia la posición y el estado de la serpiente al centro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpoo_1_1snake_1_1_snake_a23c35d37fddc4765cc9637af6c817770}{dead\+Snake}} ()
+\begin{DoxyCompactList}\small\item\em Cambia el color de la serpiente a negro, indicando su muerte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpoo_1_1snake_1_1_snake_a476b17fce3361d49b7b40d24413e4b06}{change\+Snake\+Color}} (Paint color)
+\begin{DoxyCompactList}\small\item\em Cambia el color de la serpiente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpoo_1_1snake_1_1_snake_aa884de11ddd01d1329baf8801fee7c85}{eat\+Apple}} (\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario}{Scenario}} scenario)
+\begin{DoxyCompactList}\small\item\em Incrementa el tamaño de la serpiente al comer una manzana. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpoo_1_1snake_1_1_snake_a6c7cae9b8c150a760b106f280032d36f}{eat\+Pineapple}} (\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario}{Scenario}} scenario)
+\begin{DoxyCompactList}\small\item\em Incrementa el tamaño de la serpiente al comer una piña. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classpoo_1_1snake_1_1_snake_ae1bf24dfe49baf4be98d3d6d4d72457a}{body\+Collision}} (Integer x, Integer y)
+\begin{DoxyCompactList}\small\item\em Verifica si la cabeza de la serpiente colisiona con su cuerpo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que representa la serpiente en el juego. 
+
+Esta clase administra la construcción, movimiento, crecimiento y colisiones de la serpiente. 
+
+Definition at line \mbox{\hyperlink{_snake_8java_source_l00019}{19}} of file \mbox{\hyperlink{_snake_8java_source}{Snake.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpoo_1_1snake_1_1_snake_afc08b4d9ce2dbaa8145c2f2063bc27cb}\index{poo.snake.Snake@{poo.snake.Snake}!Snake@{Snake}}
+\index{Snake@{Snake}!poo.snake.Snake@{poo.snake.Snake}}
+\doxysubsubsection{\texorpdfstring{Snake()}{Snake()}}
+{\footnotesize\ttfamily \label{classpoo_1_1snake_1_1_snake_afc08b4d9ce2dbaa8145c2f2063bc27cb} 
+poo.\+snake.\+Snake.\+Snake (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxylink{classpoo_1_1snake_1_1_snake}{Snake}. 
+
+Inicializa la serpiente construyendo su cabeza. 
+
+Definition at line \mbox{\hyperlink{_snake_8java_source_l00049}{49}} of file \mbox{\hyperlink{_snake_8java_source}{Snake.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpoo_1_1snake_1_1_snake_ae1bf24dfe49baf4be98d3d6d4d72457a}\index{poo.snake.Snake@{poo.snake.Snake}!bodyCollision@{bodyCollision}}
+\index{bodyCollision@{bodyCollision}!poo.snake.Snake@{poo.snake.Snake}}
+\doxysubsubsection{\texorpdfstring{bodyCollision()}{bodyCollision()}}
+{\footnotesize\ttfamily \label{classpoo_1_1snake_1_1_snake_ae1bf24dfe49baf4be98d3d6d4d72457a} 
+boolean poo.\+snake.\+Snake.\+body\+Collision (\begin{DoxyParamCaption}\item[{Integer}]{x}{, }\item[{Integer}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Verifica si la cabeza de la serpiente colisiona con su cuerpo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Coordenada X de la cabeza. \\
+\hline
+{\em y} & Coordenada Y de la cabeza. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si hay colisión; false en caso contrario. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_snake_8java_source_l00205}{205}} of file \mbox{\hyperlink{_snake_8java_source}{Snake.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1snake_1_1_snake_ae1bf24dfe49baf4be98d3d6d4d72457a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classpoo_1_1snake_1_1_snake_a476b17fce3361d49b7b40d24413e4b06}\index{poo.snake.Snake@{poo.snake.Snake}!changeSnakeColor@{changeSnakeColor}}
+\index{changeSnakeColor@{changeSnakeColor}!poo.snake.Snake@{poo.snake.Snake}}
+\doxysubsubsection{\texorpdfstring{changeSnakeColor()}{changeSnakeColor()}}
+{\footnotesize\ttfamily \label{classpoo_1_1snake_1_1_snake_a476b17fce3361d49b7b40d24413e4b06} 
+void poo.\+snake.\+Snake.\+change\+Snake\+Color (\begin{DoxyParamCaption}\item[{Paint}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Cambia el color de la serpiente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Nuevo color para la serpiente. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_snake_8java_source_l00165}{165}} of file \mbox{\hyperlink{_snake_8java_source}{Snake.\+java}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1snake_1_1_snake_a476b17fce3361d49b7b40d24413e4b06_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1snake_1_1_snake_a476b17fce3361d49b7b40d24413e4b06_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classpoo_1_1snake_1_1_snake_a23c35d37fddc4765cc9637af6c817770}\index{poo.snake.Snake@{poo.snake.Snake}!deadSnake@{deadSnake}}
+\index{deadSnake@{deadSnake}!poo.snake.Snake@{poo.snake.Snake}}
+\doxysubsubsection{\texorpdfstring{deadSnake()}{deadSnake()}}
+{\footnotesize\ttfamily \label{classpoo_1_1snake_1_1_snake_a23c35d37fddc4765cc9637af6c817770} 
+void poo.\+snake.\+Snake.\+dead\+Snake (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Cambia el color de la serpiente a negro, indicando su muerte. 
+
+
+
+Definition at line \mbox{\hyperlink{_snake_8java_source_l00156}{156}} of file \mbox{\hyperlink{_snake_8java_source}{Snake.\+java}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1snake_1_1_snake_a23c35d37fddc4765cc9637af6c817770_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classpoo_1_1snake_1_1_snake_aa884de11ddd01d1329baf8801fee7c85}\index{poo.snake.Snake@{poo.snake.Snake}!eatApple@{eatApple}}
+\index{eatApple@{eatApple}!poo.snake.Snake@{poo.snake.Snake}}
+\doxysubsubsection{\texorpdfstring{eatApple()}{eatApple()}}
+{\footnotesize\ttfamily \label{classpoo_1_1snake_1_1_snake_aa884de11ddd01d1329baf8801fee7c85} 
+void poo.\+snake.\+Snake.\+eat\+Apple (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario}{Scenario}}}]{scenario}{}\end{DoxyParamCaption})}
+
+
+
+Incrementa el tamaño de la serpiente al comer una manzana. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scenario} & Escenario donde se encuentra la serpiente. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_snake_8java_source_l00178}{178}} of file \mbox{\hyperlink{_snake_8java_source}{Snake.\+java}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1snake_1_1_snake_aa884de11ddd01d1329baf8801fee7c85_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classpoo_1_1snake_1_1_snake_a6c7cae9b8c150a760b106f280032d36f}\index{poo.snake.Snake@{poo.snake.Snake}!eatPineapple@{eatPineapple}}
+\index{eatPineapple@{eatPineapple}!poo.snake.Snake@{poo.snake.Snake}}
+\doxysubsubsection{\texorpdfstring{eatPineapple()}{eatPineapple()}}
+{\footnotesize\ttfamily \label{classpoo_1_1snake_1_1_snake_a6c7cae9b8c150a760b106f280032d36f} 
+void poo.\+snake.\+Snake.\+eat\+Pineapple (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario}{Scenario}}}]{scenario}{}\end{DoxyParamCaption})}
+
+
+
+Incrementa el tamaño de la serpiente al comer una piña. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scenario} & Escenario donde se encuentra la serpiente. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_snake_8java_source_l00191}{191}} of file \mbox{\hyperlink{_snake_8java_source}{Snake.\+java}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1snake_1_1_snake_a6c7cae9b8c150a760b106f280032d36f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classpoo_1_1snake_1_1_snake_a5ca271cfd2412fdd38fb599e4e41ca8b}\index{poo.snake.Snake@{poo.snake.Snake}!getHead@{getHead}}
+\index{getHead@{getHead}!poo.snake.Snake@{poo.snake.Snake}}
+\doxysubsubsection{\texorpdfstring{getHead()}{getHead()}}
+{\footnotesize\ttfamily \label{classpoo_1_1snake_1_1_snake_a5ca271cfd2412fdd38fb599e4e41ca8b} 
+Canvas poo.\+snake.\+Snake.\+get\+Head (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene el Canvas de la cabeza de la serpiente. 
+
+\begin{DoxyReturn}{Returns}
+Canvas correspondiente a la cabeza. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_snake_8java_source_l00079}{79}} of file \mbox{\hyperlink{_snake_8java_source}{Snake.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1snake_1_1_snake_a5ca271cfd2412fdd38fb599e4e41ca8b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classpoo_1_1snake_1_1_snake_a06057336b2cf56c790bbf6a6ef71ad17}\index{poo.snake.Snake@{poo.snake.Snake}!getPosicionX@{getPosicionX}}
+\index{getPosicionX@{getPosicionX}!poo.snake.Snake@{poo.snake.Snake}}
+\doxysubsubsection{\texorpdfstring{getPosicionX()}{getPosicionX()}}
+{\footnotesize\ttfamily \label{classpoo_1_1snake_1_1_snake_a06057336b2cf56c790bbf6a6ef71ad17} 
+Integer poo.\+snake.\+Snake.\+get\+PosicionX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene la posición X de la cabeza de la serpiente. 
+
+\begin{DoxyReturn}{Returns}
+Coordenada X de la cabeza como un valor entero. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_snake_8java_source_l00088}{88}} of file \mbox{\hyperlink{_snake_8java_source}{Snake.\+java}}.
+
+\Hypertarget{classpoo_1_1snake_1_1_snake_afc32094571b3c0ec067df0deef709c0b}\index{poo.snake.Snake@{poo.snake.Snake}!getPosicionY@{getPosicionY}}
+\index{getPosicionY@{getPosicionY}!poo.snake.Snake@{poo.snake.Snake}}
+\doxysubsubsection{\texorpdfstring{getPosicionY()}{getPosicionY()}}
+{\footnotesize\ttfamily \label{classpoo_1_1snake_1_1_snake_afc32094571b3c0ec067df0deef709c0b} 
+Integer poo.\+snake.\+Snake.\+get\+PosicionY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Obtiene la posición Y de la cabeza de la serpiente. 
+
+\begin{DoxyReturn}{Returns}
+Coordenada Y de la cabeza como un valor entero. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_snake_8java_source_l00097}{97}} of file \mbox{\hyperlink{_snake_8java_source}{Snake.\+java}}.
+
+\Hypertarget{classpoo_1_1snake_1_1_snake_a6d335c53cc4186c9be8962105381606f}\index{poo.snake.Snake@{poo.snake.Snake}!resetGame@{resetGame}}
+\index{resetGame@{resetGame}!poo.snake.Snake@{poo.snake.Snake}}
+\doxysubsubsection{\texorpdfstring{resetGame()}{resetGame()}}
+{\footnotesize\ttfamily \label{classpoo_1_1snake_1_1_snake_a6d335c53cc4186c9be8962105381606f} 
+Canvas poo.\+snake.\+Snake.\+reset\+Game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reinicia la posición y el estado de la serpiente al centro. 
+
+\begin{DoxyReturn}{Returns}
+Canvas correspondiente a la cabeza reiniciada. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_snake_8java_source_l00140}{140}} of file \mbox{\hyperlink{_snake_8java_source}{Snake.\+java}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1snake_1_1_snake_a6d335c53cc4186c9be8962105381606f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1snake_1_1_snake_a6d335c53cc4186c9be8962105381606f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classpoo_1_1snake_1_1_snake_a9297c74875e2a5f5dc813eb29a0a5fc7}\index{poo.snake.Snake@{poo.snake.Snake}!setHeadOnCenter@{setHeadOnCenter}}
+\index{setHeadOnCenter@{setHeadOnCenter}!poo.snake.Snake@{poo.snake.Snake}}
+\doxysubsubsection{\texorpdfstring{setHeadOnCenter()}{setHeadOnCenter()}}
+{\footnotesize\ttfamily \label{classpoo_1_1snake_1_1_snake_a9297c74875e2a5f5dc813eb29a0a5fc7} 
+void poo.\+snake.\+Snake.\+set\+Head\+On\+Center (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Centra la cabeza de la serpiente en la escena. 
+
+
+
+Definition at line \mbox{\hyperlink{_snake_8java_source_l00056}{56}} of file \mbox{\hyperlink{_snake_8java_source}{Snake.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1snake_1_1_snake_a9297c74875e2a5f5dc813eb29a0a5fc7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classpoo_1_1snake_1_1_snake_a21ef7c78d7414e6941cf6c6172e6da6b}\index{poo.snake.Snake@{poo.snake.Snake}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!poo.snake.Snake@{poo.snake.Snake}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily \label{classpoo_1_1snake_1_1_snake_a21ef7c78d7414e6941cf6c6172e6da6b} 
+void poo.\+snake.\+Snake.\+set\+Position (\begin{DoxyParamCaption}\item[{Integer}]{x}{, }\item[{Integer}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Actualiza la posición de la cabeza y el cuerpo de la serpiente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Nueva coordenada X de la cabeza. \\
+\hline
+{\em y} & Nueva coordenada Y de la cabeza. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_snake_8java_source_l00107}{107}} of file \mbox{\hyperlink{_snake_8java_source}{Snake.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/tmp/\+Proyecto-\/\+LAB\+\_\+/src/main/java/poo/snake/\mbox{\hyperlink{_snake_8java}{Snake.\+java}}\end{DoxyCompactItemize}

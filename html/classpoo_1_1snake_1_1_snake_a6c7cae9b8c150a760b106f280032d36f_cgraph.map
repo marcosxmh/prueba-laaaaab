@@ -1,0 +1,7 @@
+<map id="poo.snake.Snake.eatPineapple" name="poo.snake.Snake.eatPineapple">
+<area shape="rect" id="Node000001" title="Incrementa el tamaño de la serpiente al comer una piña." alt="" coords="5,47,207,73"/>
+<area shape="rect" id="Node000002" href="$classpoo_1_1scenario_1_1_scenario.html#a1bc9d2122845aec407d2528d8bb7022e" title="Agrega una nueva parte al cuerpo de la serpiente en la escena." alt="" coords="282,5,458,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,45,267,37,267,42,208,50"/>
+<area shape="rect" id="Node000003" href="$classpoo_1_1canvas__utils__square_1_1_canvas_utils_squares.html#a82d7f5fae0f586cc76ea8c4d2e39c6f9" title="Crea un objeto Canvas con un cuadrado de un color específico." alt="" coords="255,72,485,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,70,239,74,239,79,207,75"/>
+</map>

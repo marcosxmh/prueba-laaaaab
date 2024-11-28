@@ -1,0 +1,5 @@
+<map id="poo.food.apple.Apple.creatingFood" name="poo.food.apple.Apple.creatingFood">
+<area shape="rect" id="Node000001" title="Crea gráficamente la manzana como un cuadrado rojo." alt="" coords="5,13,228,40"/>
+<area shape="rect" id="Node000002" href="$classpoo_1_1canvas__utils__square_1_1_canvas_utils_squares.html#a82d7f5fae0f586cc76ea8c4d2e39c6f9" title="Crea un objeto Canvas con un cuadrado de un color específico." alt="" coords="276,5,506,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,24,260,24,260,29,228,29"/>
+</map>

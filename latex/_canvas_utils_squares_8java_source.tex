@@ -1,0 +1,28 @@
+\doxysection{Canvas\+Utils\+Squares.\+java}
+\hypertarget{_canvas_utils_squares_8java_source}{}\label{_canvas_utils_squares_8java_source}\index{C:/tmp/Proyecto-\/LAB\_/src/main/java/poo/canvas\_utils\_square/CanvasUtilsSquares.java@{C:/tmp/Proyecto-\/LAB\_/src/main/java/poo/canvas\_utils\_square/CanvasUtilsSquares.java}}
+\mbox{\hyperlink{_canvas_utils_squares_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00001}\mbox{\hyperlink{namespacepoo_1_1canvas__utils__square}{00001}}\ \textcolor{keyword}{package\ }poo.canvas\_utils\_square;}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacepoo}{poo}}.\mbox{\hyperlink{namespacepoo_1_1config}{config}}.\mbox{\hyperlink{classpoo_1_1config_1_1_config}{Config}};}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00004}00004\ \textcolor{keyword}{import}\ javafx.scene.canvas.Canvas;}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00005}00005\ \textcolor{keyword}{import}\ javafx.scene.canvas.GraphicsContext;}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00006}00006\ \textcolor{keyword}{import}\ javafx.scene.paint.Paint;}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00015}\mbox{\hyperlink{classpoo_1_1canvas__utils__square_1_1_canvas_utils_squares}{00015}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classpoo_1_1canvas__utils__square_1_1_canvas_utils_squares}{CanvasUtilsSquares}}\ \{}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00026}\mbox{\hyperlink{classpoo_1_1canvas__utils__square_1_1_canvas_utils_squares_a82d7f5fae0f586cc76ea8c4d2e39c6f9}{00026}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ Canvas\ \mbox{\hyperlink{classpoo_1_1canvas__utils__square_1_1_canvas_utils_squares_a82d7f5fae0f586cc76ea8c4d2e39c6f9}{buildingSquare}}(Paint\ color)\ \{}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00027}00027\ \ \ \ \ \ \ \ \ Canvas\ square\ =\ \textcolor{keyword}{new}\ Canvas(\mbox{\hyperlink{classpoo_1_1config_1_1_config}{Config}}.\mbox{\hyperlink{classpoo_1_1config_1_1_config_a31dd367f1e9e7496fba929203ad2593a}{squareSize}},\ \mbox{\hyperlink{classpoo_1_1config_1_1_config}{Config}}.\mbox{\hyperlink{classpoo_1_1config_1_1_config_a31dd367f1e9e7496fba929203ad2593a}{squareSize}});\ \textcolor{comment}{//\ Creando\ un\ cuadrado}}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00028}00028\ \ \ \ \ \ \ \ \ GraphicsContext\ gc\ =\ square.getGraphicsContext2D();\ \textcolor{comment}{//\ Usado\ para\ agregar\ elementos\ al\ objeto}}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Primero\ se\ establece\ el\ color,\ luego\ se\ dibuja\ en\ el\ Canvas}}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00031}00031\ \ \ \ \ \ \ \ \ gc.setFill(color);\ \textcolor{comment}{//\ Estableciendo\ el\ color\ del\ cuadrado}}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Dibujando\ un\ objeto\ cuadrado\ en\ el\ Canvas}}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00034}00034\ \ \ \ \ \ \ \ \ gc.fillRect(0,\ 0,\ \mbox{\hyperlink{classpoo_1_1config_1_1_config}{Config}}.\mbox{\hyperlink{classpoo_1_1config_1_1_config_a31dd367f1e9e7496fba929203ad2593a}{squareSize}},\ \mbox{\hyperlink{classpoo_1_1config_1_1_config}{Config}}.\mbox{\hyperlink{classpoo_1_1config_1_1_config_a31dd367f1e9e7496fba929203ad2593a}{squareSize}});\ \textcolor{comment}{//\ Posición\ x\ -\/\ Posición\ y\ -\/\ tamaño}}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ square;}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_canvas_utils_squares_8java_source_l00038}00038\ \}}
+
+\end{DoxyCode}

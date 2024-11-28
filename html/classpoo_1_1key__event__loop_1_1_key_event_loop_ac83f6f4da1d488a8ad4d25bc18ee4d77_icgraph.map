@@ -1,0 +1,5 @@
+<map id="poo.key_event_loop.KeyEventLoop.startLoop" name="poo.key_event_loop.KeyEventLoop.startLoop">
+<area shape="rect" id="Node000001" title="Inicia el bucle principal del juego, donde se maneja el movimiento de la serpiente y las colisiones." alt="" coords="252,5,450,48"/>
+<area shape="rect" id="Node000002" href="$classpoo_1_1key__event__loop_1_1_key_event_loop.html#a2d5073765ec04338f8b19dcdad4cb3a6" title="Constructor que inicializa el bucle de eventos del juego." alt="" coords="5,5,204,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,29,204,29,204,24,236,24"/>
+</map>

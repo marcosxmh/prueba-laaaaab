@@ -1,0 +1,54 @@
+\doxysection{Play\+Button.\+java}
+\hypertarget{_play_button_8java_source}{}\label{_play_button_8java_source}\index{C:/tmp/Proyecto-\/LAB\_/src/main/java/poo/play\_button/PlayButton.java@{C:/tmp/Proyecto-\/LAB\_/src/main/java/poo/play\_button/PlayButton.java}}
+\mbox{\hyperlink{_play_button_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00001}\mbox{\hyperlink{namespacepoo_1_1play__button}{00001}}\ \textcolor{keyword}{package\ }poo.play\_button;}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00003}00003\ \textcolor{keyword}{import}\ \mbox{\hyperlink{namespacepoo}{poo}}.\mbox{\hyperlink{namespacepoo_1_1config}{config}}.\mbox{\hyperlink{classpoo_1_1config_1_1_config}{Config}};}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00004}00004\ \textcolor{keyword}{import}\ javafx.event.ActionEvent;}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00005}00005\ \textcolor{keyword}{import}\ javafx.event.EventHandler;}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00006}00006\ \textcolor{keyword}{import}\ javafx.geometry.Pos;}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00007}00007\ \textcolor{keyword}{import}\ javafx.scene.control.Button;}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00008}00008\ \textcolor{keyword}{import}\ javafx.scene.layout.VBox;}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00009}00009\ \textcolor{keyword}{import}\ javafx.scene.text.Text;}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00010}00010\ \textcolor{keyword}{import}\ javafx.scene.text.Font;}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00019}\mbox{\hyperlink{classpoo_1_1play__button_1_1_play_button}{00019}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classpoo_1_1play__button_1_1_play_button}{PlayButton}}\ \textcolor{keyword}{extends}\ VBox\ \{}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00026}00026\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classpoo_1_1play__button_1_1_play_button}{PlayButton}}(EventHandler<ActionEvent>\ playAction)\ \{}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00032}00032\ \ \ \ \ \ \ \ \ Text\ title\ =\ \textcolor{keyword}{new}\ Text(\textcolor{stringliteral}{"{}Snake\ Game"{}});}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00033}00033\ \ \ \ \ \ \ \ \ title.setFont(Font.font(60));}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00034}00034\ \ \ \ \ \ \ \ \ title.setTranslateY(-\/80);\ \textcolor{comment}{//\ Mueve\ el\ título\ hacia\ arriba}}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00035}00035\ \ \ \ \ \ \ \ \ title.setStyle(\textcolor{stringliteral}{"{}-\/fx-\/font-\/weight:\ bold;"{}});\ \textcolor{comment}{//\ Definiendo\ el\ estilo\ en\ negrita}}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00041}00041\ \ \ \ \ \ \ \ \ Text\ welcome\ =\ \textcolor{keyword}{new}\ Text(}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}¡Bienvenido(a)\ al\ Juego!"{}});}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00043}00043\ \ \ \ \ \ \ \ \ welcome.setFont(Font.font(30));}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00049}00049\ \ \ \ \ \ \ \ \ Text\ description\ =\ \textcolor{keyword}{new}\ Text(}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Observaciones:\ \(\backslash\)nLas\ manzanas\ valen\ 3\ puntos\ y\ las\ pinyas\ valen\ 1\ punto.\ \(\backslash\)nUsa\ las\ flechas\ o\ las\ teclas\ W,\ A,\ S\ y\ D\ para\ mover\ la\ serpiente!"{}});}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00051}00051\ \ \ \ \ \ \ \ \ description.setFont(Font.font(30));}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00053}00053\ \ \ \ \ \ \ \ \ welcome.setTranslateY(-\/20);}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00054}00054\ \ \ \ \ \ \ \ \ description.setTranslateY(-\/20);}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00060}00060\ \ \ \ \ \ \ \ \ Button\ play\ =\ \textcolor{keyword}{new}\ Button(\textcolor{stringliteral}{"{}Iniciar\ Intento"{}});}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00061}00061\ \ \ \ \ \ \ \ \ play.setFont(Font.font(40));}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00062}00062\ \ \ \ \ \ \ \ \ play.setOnAction(playAction);}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00063}00063\ \ \ \ \ \ \ \ \ play.setTranslateY(40);}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Estableciendo\ el\ tamaño\ del\ VBox\ igual\ al\ tamaño\ de\ la\ escena.\ Ayuda\ a\ la\ hora\ de}}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00066}00066\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ centralizar\ el\ Label}}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00067}00067\ \ \ \ \ \ \ \ \ this.setMinWidth(\mbox{\hyperlink{classpoo_1_1config_1_1_config}{Config}}.\mbox{\hyperlink{classpoo_1_1config_1_1_config_abda0a8327242b473a499de51cae99e38}{width}});}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00068}00068\ \ \ \ \ \ \ \ \ this.setMinHeight(\mbox{\hyperlink{classpoo_1_1config_1_1_config}{Config}}.\mbox{\hyperlink{classpoo_1_1config_1_1_config_a86f729467f1bdeeea4f396510b3a7735}{height}});}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00070}00070\ \ \ \ \ \ \ \ \ this.setSpacing(20);\ \textcolor{comment}{//\ Espaciado\ entre\ los\ elementos}}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00071}00071\ \ \ \ \ \ \ \ \ this.getChildren().addAll(title,\ description,\ play);}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00073}00073\ \ \ \ \ \ \ \ \ this.setAlignment(Pos.CENTER);\ \textcolor{comment}{//\ Alineación\ centrada}}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00074}00074\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_play_button_8java_source_l00076}00076\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,56 @@
+\chapter{Snake Game -\/ Proyecto de Programación Orientada a Objetos}
+\hypertarget{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e}{}\label{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e}\index{Snake Game -\/ Proyecto de Programación Orientada a Objetos@{Snake Game -\/ Proyecto de Programación Orientada a Objetos}}
+\label{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md0}%
+
+
+Este es un proyecto de escritorio del famoso juego Snake desarrollado para la asignatura de Programación Orientada a Objetos. El juego ha sido implementado en Java, utilizando Maven para la gestión de dependencias y construcción del proyecto.\hypertarget{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Sobre el Proyecto}{Sobre el Proyecto}}\label{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md1}
+El Snake Game es un clásico juego de arcade en el que el jugador controla una serpiente que crece al consumir elementos en el escenario. El objetivo del juego es guiar a la serpiente para que se alimente de frutas como manzanas y piñas, evitando chocar con los bordes de la pantalla o con su propio cuerpo.\hypertarget{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{Conceptos de Programación Orientada a Objetos (POO)}{Conceptos de Programación Orientada a Objetos (POO)}}\label{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md2}
+El proyecto utiliza los conceptos fundamentales de Programación Orientada a Objetos\+:\hypertarget{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{\texorpdfstring{Clases y Objetos}{Clases y Objetos}}\label{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md3}
+Las entidades del juego, como la serpiente, las frutas y el escenario, están representadas por clases. Los objetos son instancias de estas clases.\hypertarget{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{\texorpdfstring{Herencia}{Herencia}}\label{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md4}
+La jerarquía de clases se utiliza para reutilizar código común y establecer relaciones de especialización entre las entidades del juego. Por ejemplo, la clase {\ttfamily Food} puede ser heredada por las clases {\ttfamily Apple} y {\ttfamily Pineapple}.\hypertarget{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{\texorpdfstring{Encapsulamiento}{Encapsulamiento}}\label{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md5}
+Los detalles de implementación de cada clase están encapsulados, definiendo clases públicas, privadas y protegidas. Esto promueve la modularidad y facilita el mantenimiento del código.\hypertarget{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{\texorpdfstring{Abstracción}{Abstracción}}\label{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md6}
+El código está organizado en clases y métodos que representan conceptos abstractos del juego, como la serpiente, las frutas y el escenario. Esto simplifica la implementación y hace que el código sea más comprensible.\hypertarget{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{\texorpdfstring{Polimorfismo}{Polimorfismo}}\label{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md7}
+El juego utiliza polimorfismo para manejar objetos de clases con diferentes comportamientos en función del contexto. Esto contribuye a la flexibilidad del código.\hypertarget{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md8}{}\doxysection{\texorpdfstring{Cómo Ejecutar el Proyecto}{Cómo Ejecutar el Proyecto}}\label{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md8}
+\hypertarget{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{\texorpdfstring{Requisitos Previos}{Requisitos Previos}}\label{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md9}
+
+\begin{DoxyItemize}
+\item Tener instalado el JDK (Java Development Kit).
+\item Tener Maven instalado.
+\item Tener una IDE para Java (por ejemplo, Eclipse, IntelliJ IDEA, VSCode).
+\end{DoxyItemize}\hypertarget{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md10}{}\doxysubsection{\texorpdfstring{Iniciar el Proyecto}{Iniciar el Proyecto}}\label{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md10}
+
+\begin{DoxyEnumerate}
+\item Clona el repositorio del proyecto en tu entorno local.
+\item Abre el terminal en la carpeta raíz del proyecto.
+\item Ejecuta el comando para instalar las dependencias de Maven\+:
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mvn\ install}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item A continuación, ejecuta el comando para compilar y ejecutar el proyecto.
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mvn\ compile\ javafx:run}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item Después de seguir estos pasos, el Snake Game se iniciará y podrás comenzar a jugar.
+\end{DoxyItemize}\hypertarget{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md11}{}\doxysection{\texorpdfstring{Entorno de Desarrollo\+:}{Entorno de Desarrollo\+:}}\label{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md11}
+Este proyecto fue desarrollado utilizando el editor de código Visual Studio Code (VSCode), pero puede ejecutarse en cualquier IDE Java compatible con Maven.\hypertarget{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md12}{}\doxysection{\texorpdfstring{Sonar\+Qube \+:}{Sonar\+Qube \+:}}\label{md__c_1_2tmp_2_proyecto-_l_a_b___2_r_e_a_d_m_e_autotoc_md12}
+
+\begin{DoxyItemize}
+\item \mbox{[}\mbox{]} (\href{https://sonarcloud.io/summary/new_code?id=PedroHdez18_Proyecto-LAB_}{\texttt{ https\+://sonarcloud.\+io/summary/new\+\_\+code?id=\+Pedro\+Hdez18\+\_\+\+Proyecto-\/\+LAB\+\_\+}}) 
+\end{DoxyItemize}

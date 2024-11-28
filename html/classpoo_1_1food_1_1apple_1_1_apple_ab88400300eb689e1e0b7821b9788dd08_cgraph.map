@@ -1,0 +1,5 @@
+<map id="poo.food.apple.Apple.setRandomPosition" name="poo.food.apple.Apple.setRandomPosition">
+<area shape="rect" id="Node000001" title="Asigna una posición aleatoria a la manzana dentro del área del juego." alt="" coords="5,5,171,48"/>
+<area shape="rect" id="Node000002" href="$classpoo_1_1food_1_1_food.html#af265cf2b621530449148f4fe13b3f0d5" title="Genera un número aleatorio dentro de un rango dado y lo ajusta a la cuadrícula del juego." alt="" coords="219,13,423,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,24,203,24,203,29,171,29"/>
+</map>

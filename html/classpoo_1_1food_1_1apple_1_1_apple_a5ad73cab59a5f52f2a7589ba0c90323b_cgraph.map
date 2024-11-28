@@ -1,0 +1,11 @@
+<map id="poo.food.apple.Apple.Apple" name="poo.food.apple.Apple.Apple">
+<area shape="rect" id="Node000001" title="Constructor de la clase Apple." alt="" coords="5,43,186,69"/>
+<area shape="rect" id="Node000002" href="$classpoo_1_1food_1_1apple_1_1_apple.html#a0533d6cac09381ed62ed8424fb3f92c4" title="Crea gráficamente la manzana como un cuadrado rojo." alt="" coords="234,13,456,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,43,218,39,218,44,187,48"/>
+<area shape="rect" id="Node000004" href="$classpoo_1_1food_1_1apple_1_1_apple.html#ab88400300eb689e1e0b7821b9788dd08" title="Asigna una posición aleatoria a la manzana dentro del área del juego." alt="" coords="262,64,428,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,64,247,71,246,76,186,69"/>
+<area shape="rect" id="Node000003" href="$classpoo_1_1canvas__utils__square_1_1_canvas_utils_squares.html#a82d7f5fae0f586cc76ea8c4d2e39c6f9" title="Crea un objeto Canvas con un cuadrado de un color específico." alt="" coords="504,5,734,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="457,24,488,24,488,29,457,29"/>
+<area shape="rect" id="Node000005" href="$classpoo_1_1food_1_1_food.html#af265cf2b621530449148f4fe13b3f0d5" title="Genera un número aleatorio dentro de un rango dado y lo ajusta a la cuadrícula del juego." alt="" coords="517,72,721,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="428,83,501,83,501,88,428,88"/>
+</map>

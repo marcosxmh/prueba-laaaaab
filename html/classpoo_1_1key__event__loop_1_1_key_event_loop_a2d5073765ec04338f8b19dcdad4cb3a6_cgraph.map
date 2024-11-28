@@ -1,0 +1,13 @@
+<map id="poo.key_event_loop.KeyEventLoop.KeyEventLoop" name="poo.key_event_loop.KeyEventLoop.KeyEventLoop">
+<area shape="rect" id="Node000001" title="Constructor que inicializa el bucle de eventos del juego." alt="" coords="5,39,204,81"/>
+<area shape="rect" id="Node000002" href="$classpoo_1_1scenario_1_1_scenario.html#a924e53536f8409d0251577be638bd47b" title="Configura el manejo de eventos de teclado en la escena." alt="" coords="263,5,438,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,44,247,38,248,43,205,49"/>
+<area shape="rect" id="Node000003" href="$classpoo_1_1key__event__loop_1_1_key_event_loop.html#ac83f6f4da1d488a8ad4d25bc18ee4d77" title="Inicia el bucle principal del juego, donde se maneja el movimiento de la serpiente y las colisiones." alt="" coords="252,72,450,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,71,237,75,236,80,204,76"/>
+<area shape="rect" id="Node000004" href="$classpoo_1_1snake_1_1_snake.html#ae1bf24dfe49baf4be98d3d6d4d72457a" title="Verifica si la cabeza de la serpiente colisiona con su cuerpo." alt="" coords="502,21,707,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="445,69,528,50,529,55,447,74"/>
+<area shape="rect" id="Node000005" href="$classpoo_1_1food_1_1pineapple_1_1_pineapple.html#a673aee186a15829ee2a8a23c0cba2565" title=" " alt="" coords="498,72,711,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="450,91,483,91,483,96,450,96"/>
+<area shape="rect" id="Node000006" href="$classpoo_1_1food_1_1pineapple_1_1_pineapple.html#af5f8671864a68f7e66cc1f6547fa8d70" title=" " alt="" coords="498,139,711,181"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="435,113,507,132,505,137,434,118"/>
+</map>

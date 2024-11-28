@@ -1,0 +1,134 @@
+\doxysection{poo.\+food.\+Food Class Reference}
+\hypertarget{classpoo_1_1food_1_1_food}{}\label{classpoo_1_1food_1_1_food}\index{poo.food.Food@{poo.food.Food}}
+
+
+Clase abstracta que define la estructura básica para los objetos de tipo comida en el juego de la serpiente.  
+
+
+
+
+Inheritance diagram for poo.\+food.\+Food\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1food_1_1_food__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Integer \mbox{\hyperlink{classpoo_1_1food_1_1_food_af265cf2b621530449148f4fe13b3f0d5}{random\+Numbers}} (Integer min, Integer max)
+\begin{DoxyCompactList}\small\item\em Genera un número aleatorio dentro de un rango dado y lo ajusta a la cuadrícula del juego. \end{DoxyCompactList}\item 
+abstract Integer \mbox{\hyperlink{classpoo_1_1food_1_1_food_adf313aca631939fd1d6dccc564ac59e6}{get\+PosicionX}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la posición X actual del objeto de comida. \end{DoxyCompactList}\item 
+abstract Integer \mbox{\hyperlink{classpoo_1_1food_1_1_food_a8dc737f70c9a664105114030e05746e5}{get\+PosicionY}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la posición Y actual del objeto de comida. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{classpoo_1_1food_1_1_food_a26087bb759a150bf7d5da72f2b973f7b}{creating\+Food}} ()
+\begin{DoxyCompactList}\small\item\em Método abstracto para crear la representación gráfica de un alimento. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase abstracta que define la estructura básica para los objetos de tipo comida en el juego de la serpiente. 
+
+Esta clase proporciona métodos y atributos comunes a todos los tipos de alimentos, como el cálculo de posiciones aleatorias y la obtención de coordenadas. 
+
+Definition at line \mbox{\hyperlink{_food_8java_source_l00012}{12}} of file \mbox{\hyperlink{_food_8java_source}{Food.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpoo_1_1food_1_1_food_a26087bb759a150bf7d5da72f2b973f7b}\index{poo.food.Food@{poo.food.Food}!creatingFood@{creatingFood}}
+\index{creatingFood@{creatingFood}!poo.food.Food@{poo.food.Food}}
+\doxysubsubsection{\texorpdfstring{creatingFood()}{creatingFood()}}
+{\footnotesize\ttfamily \label{classpoo_1_1food_1_1_food_a26087bb759a150bf7d5da72f2b973f7b} 
+abstract void poo.\+food.\+Food.\+creating\+Food (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Método abstracto para crear la representación gráfica de un alimento. 
+
+Las clases que heredan de {\ttfamily \doxylink{classpoo_1_1food_1_1_food}{Food}} deben implementar este método para definir cómo se crea gráficamente el objeto de comida. 
+
+Reimplemented in \mbox{\hyperlink{classpoo_1_1food_1_1apple_1_1_apple_a0533d6cac09381ed62ed8424fb3f92c4}{poo.\+food.\+apple.\+Apple}}, and \mbox{\hyperlink{classpoo_1_1food_1_1pineapple_1_1_pineapple_a3f94602548d2b3f4cdb5c6a488f43b50}{poo.\+food.\+pineapple.\+Pineapple}}.
+
+\Hypertarget{classpoo_1_1food_1_1_food_adf313aca631939fd1d6dccc564ac59e6}\index{poo.food.Food@{poo.food.Food}!getPosicionX@{getPosicionX}}
+\index{getPosicionX@{getPosicionX}!poo.food.Food@{poo.food.Food}}
+\doxysubsubsection{\texorpdfstring{getPosicionX()}{getPosicionX()}}
+{\footnotesize\ttfamily \label{classpoo_1_1food_1_1_food_adf313aca631939fd1d6dccc564ac59e6} 
+abstract Integer poo.\+food.\+Food.\+get\+PosicionX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Obtiene la posición X actual del objeto de comida. 
+
+Este es un método abstracto que debe ser implementado por las clases derivadas, para devolver la posición X del objeto de comida en el área del juego.
+
+\begin{DoxyReturn}{Returns}
+La posición X del objeto como un entero. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classpoo_1_1food_1_1apple_1_1_apple_aa21fc58685e42862a37458f6ac6d0edd}{poo.\+food.\+apple.\+Apple}}, and \mbox{\hyperlink{classpoo_1_1food_1_1pineapple_1_1_pineapple_a673aee186a15829ee2a8a23c0cba2565}{poo.\+food.\+pineapple.\+Pineapple}}.
+
+\Hypertarget{classpoo_1_1food_1_1_food_a8dc737f70c9a664105114030e05746e5}\index{poo.food.Food@{poo.food.Food}!getPosicionY@{getPosicionY}}
+\index{getPosicionY@{getPosicionY}!poo.food.Food@{poo.food.Food}}
+\doxysubsubsection{\texorpdfstring{getPosicionY()}{getPosicionY()}}
+{\footnotesize\ttfamily \label{classpoo_1_1food_1_1_food_a8dc737f70c9a664105114030e05746e5} 
+abstract Integer poo.\+food.\+Food.\+get\+PosicionY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Obtiene la posición Y actual del objeto de comida. 
+
+Este es un método abstracto que debe ser implementado por las clases derivadas, para devolver la posición Y del objeto de comida en el área del juego.
+
+\begin{DoxyReturn}{Returns}
+La posición Y del objeto como un entero. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classpoo_1_1food_1_1apple_1_1_apple_aeb4d30289b1a44a200a8808e7570ff1b}{poo.\+food.\+apple.\+Apple}}, and \mbox{\hyperlink{classpoo_1_1food_1_1pineapple_1_1_pineapple_af5f8671864a68f7e66cc1f6547fa8d70}{poo.\+food.\+pineapple.\+Pineapple}}.
+
+\Hypertarget{classpoo_1_1food_1_1_food_af265cf2b621530449148f4fe13b3f0d5}\index{poo.food.Food@{poo.food.Food}!randomNumbers@{randomNumbers}}
+\index{randomNumbers@{randomNumbers}!poo.food.Food@{poo.food.Food}}
+\doxysubsubsection{\texorpdfstring{randomNumbers()}{randomNumbers()}}
+{\footnotesize\ttfamily \label{classpoo_1_1food_1_1_food_af265cf2b621530449148f4fe13b3f0d5} 
+Integer poo.\+food.\+Food.\+random\+Numbers (\begin{DoxyParamCaption}\item[{Integer}]{min}{, }\item[{Integer}]{max}{}\end{DoxyParamCaption})}
+
+
+
+Genera un número aleatorio dentro de un rango dado y lo ajusta a la cuadrícula del juego. 
+
+Este método asegura que el valor generado sea un múltiplo del tamaño de los cuadrados ({\ttfamily \doxylink{classpoo_1_1config_1_1_config_a31dd367f1e9e7496fba929203ad2593a}{Config.\+square\+Size}}), para que el objeto se alinee correctamente en la cuadrícula del área del juego.
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & Valor mínimo del rango. \\
+\hline
+{\em max} & Valor máximo del rango. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un número aleatorio ajustado al tamaño de la cuadrícula. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_food_8java_source_l00032}{32}} of file \mbox{\hyperlink{_food_8java_source}{Food.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1food_1_1_food_af265cf2b621530449148f4fe13b3f0d5_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/tmp/\+Proyecto-\/\+LAB\+\_\+/src/main/java/poo/food/\mbox{\hyperlink{_food_8java}{Food.\+java}}\end{DoxyCompactItemize}

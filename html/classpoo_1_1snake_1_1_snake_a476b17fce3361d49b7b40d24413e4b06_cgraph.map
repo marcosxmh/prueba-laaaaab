@@ -1,0 +1,5 @@
+<map id="poo.snake.Snake.changeSnakeColor" name="poo.snake.Snake.changeSnakeColor">
+<area shape="rect" id="Node000001" title="Cambia el color de la serpiente." alt="" coords="5,5,211,48"/>
+<area shape="rect" id="Node000002" href="$classpoo_1_1snake_1_1_snake.html#a5ca271cfd2412fdd38fb599e4e41ca8b" title="Obtiene el Canvas de la cabeza de la serpiente." alt="" coords="259,13,434,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,24,243,24,243,29,211,29"/>
+</map>

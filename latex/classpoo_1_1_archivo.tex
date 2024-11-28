@@ -1,0 +1,88 @@
+\doxysection{poo.\+Archivo Class Reference}
+\hypertarget{classpoo_1_1_archivo}{}\label{classpoo_1_1_archivo}\index{poo.Archivo@{poo.Archivo}}
+
+
+Clase que maneja la lectura y escritura de puntuaciones en un archivo de texto. Permite guardar las puntuaciones del jugador y obtener las mejores puntuaciones.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classpoo_1_1_archivo_aa2adc2d749a20e40d42c92ba54611664}{write\+Score}} (String nickname, Integer score)
+\begin{DoxyCompactList}\small\item\em Escribe la puntuación de un jugador en un archivo de texto. Si el archivo no existe, lo crea. Si ya existe, añade la puntuación al final. \end{DoxyCompactList}\item 
+static List$<$ String $>$ \mbox{\hyperlink{classpoo_1_1_archivo_a80ad8c062e36a91b760f78dd2e306422}{get\+Top\+Scores}} (int limit)
+\begin{DoxyCompactList}\small\item\em Obtiene las mejores puntuaciones almacenadas en el archivo de puntuaciones. Lee las puntuaciones, las ordena de mayor a menor y retorna una lista con las mejores puntuaciones, limitadas por el parámetro {\ttfamily limit}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que maneja la lectura y escritura de puntuaciones en un archivo de texto. Permite guardar las puntuaciones del jugador y obtener las mejores puntuaciones. 
+
+Definition at line \mbox{\hyperlink{_archivo_8java_source_l00012}{12}} of file \mbox{\hyperlink{_archivo_8java_source}{Archivo.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpoo_1_1_archivo_a80ad8c062e36a91b760f78dd2e306422}\index{poo.Archivo@{poo.Archivo}!getTopScores@{getTopScores}}
+\index{getTopScores@{getTopScores}!poo.Archivo@{poo.Archivo}}
+\doxysubsubsection{\texorpdfstring{getTopScores()}{getTopScores()}}
+{\footnotesize\ttfamily \label{classpoo_1_1_archivo_a80ad8c062e36a91b760f78dd2e306422} 
+static List$<$ String $>$ poo.\+Archivo.\+get\+Top\+Scores (\begin{DoxyParamCaption}\item[{int}]{limit}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtiene las mejores puntuaciones almacenadas en el archivo de puntuaciones. Lee las puntuaciones, las ordena de mayor a menor y retorna una lista con las mejores puntuaciones, limitadas por el parámetro {\ttfamily limit}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit} & El número máximo de puntuaciones a obtener. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una lista de las mejores puntuaciones en formato de texto. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_archivo_8java_source_l00038}{38}} of file \mbox{\hyperlink{_archivo_8java_source}{Archivo.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1_archivo_a80ad8c062e36a91b760f78dd2e306422_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classpoo_1_1_archivo_aa2adc2d749a20e40d42c92ba54611664}\index{poo.Archivo@{poo.Archivo}!writeScore@{writeScore}}
+\index{writeScore@{writeScore}!poo.Archivo@{poo.Archivo}}
+\doxysubsubsection{\texorpdfstring{writeScore()}{writeScore()}}
+{\footnotesize\ttfamily \label{classpoo_1_1_archivo_aa2adc2d749a20e40d42c92ba54611664} 
+static void poo.\+Archivo.\+write\+Score (\begin{DoxyParamCaption}\item[{String}]{nickname}{, }\item[{Integer}]{score}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Escribe la puntuación de un jugador en un archivo de texto. Si el archivo no existe, lo crea. Si ya existe, añade la puntuación al final. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nickname} & El nombre del jugador. \\
+\hline
+{\em score} & La puntuación obtenida por el jugador. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_archivo_8java_source_l00021}{21}} of file \mbox{\hyperlink{_archivo_8java_source}{Archivo.\+java}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1_archivo_aa2adc2d749a20e40d42c92ba54611664_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/tmp/\+Proyecto-\/\+LAB\+\_\+/src/main/java/poo/\mbox{\hyperlink{_archivo_8java}{Archivo.\+java}}\end{DoxyCompactItemize}

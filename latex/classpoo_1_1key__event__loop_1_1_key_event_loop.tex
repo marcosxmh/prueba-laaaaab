@@ -1,0 +1,113 @@
+\doxysection{poo.\+key\+\_\+event\+\_\+loop.\+Key\+Event\+Loop Class Reference}
+\hypertarget{classpoo_1_1key__event__loop_1_1_key_event_loop}{}\label{classpoo_1_1key__event__loop_1_1_key_event_loop}\index{poo.key\_event\_loop.KeyEventLoop@{poo.key\_event\_loop.KeyEventLoop}}
+
+
+Clase encargada de manejar el bucle principal del juego, incluyendo el movimiento de la serpiente y la detección de colisiones.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpoo_1_1key__event__loop_1_1_key_event_loop_a2d5073765ec04338f8b19dcdad4cb3a6}{Key\+Event\+Loop}} (\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario}{Scenario}} scenario, \mbox{\hyperlink{classpoo_1_1snake_1_1_snake}{Snake}} snake, \mbox{\hyperlink{classpoo_1_1food_1_1apple_1_1_apple}{Apple}} apple, \mbox{\hyperlink{classpoo_1_1food_1_1pineapple_1_1_pineapple}{Pineapple}} pineapple)
+\begin{DoxyCompactList}\small\item\em Constructor que inicializa el bucle de eventos del juego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpoo_1_1key__event__loop_1_1_key_event_loop_ac83f6f4da1d488a8ad4d25bc18ee4d77}{start\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em Inicia el bucle principal del juego, donde se maneja el movimiento de la serpiente y las colisiones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpoo_1_1key__event__loop_1_1_key_event_loop_ab435c3b2415b3c1f7ba23224390e5fe6}{game\+Over}} ()
+\begin{DoxyCompactList}\small\item\em Detiene el bucle principal y gestiona el fin del juego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase encargada de manejar el bucle principal del juego, incluyendo el movimiento de la serpiente y la detección de colisiones. 
+
+Esta clase también interpreta las entradas del teclado para dirigir a la serpiente y gestiona las interacciones con elementos del escenario, como la comida. 
+
+Definition at line \mbox{\hyperlink{_key_event_loop_8java_source_l00020}{20}} of file \mbox{\hyperlink{_key_event_loop_8java_source}{Key\+Event\+Loop.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpoo_1_1key__event__loop_1_1_key_event_loop_a2d5073765ec04338f8b19dcdad4cb3a6}\index{poo.key\_event\_loop.KeyEventLoop@{poo.key\_event\_loop.KeyEventLoop}!KeyEventLoop@{KeyEventLoop}}
+\index{KeyEventLoop@{KeyEventLoop}!poo.key\_event\_loop.KeyEventLoop@{poo.key\_event\_loop.KeyEventLoop}}
+\doxysubsubsection{\texorpdfstring{KeyEventLoop()}{KeyEventLoop()}}
+{\footnotesize\ttfamily \label{classpoo_1_1key__event__loop_1_1_key_event_loop_a2d5073765ec04338f8b19dcdad4cb3a6} 
+poo.\+key\+\_\+event\+\_\+loop.\+Key\+Event\+Loop.\+Key\+Event\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpoo_1_1scenario_1_1_scenario}{Scenario}}}]{scenario}{, }\item[{\mbox{\hyperlink{classpoo_1_1snake_1_1_snake}{Snake}}}]{snake}{, }\item[{\mbox{\hyperlink{classpoo_1_1food_1_1apple_1_1_apple}{Apple}}}]{apple}{, }\item[{\mbox{\hyperlink{classpoo_1_1food_1_1pineapple_1_1_pineapple}{Pineapple}}}]{pineapple}{}\end{DoxyParamCaption})}
+
+
+
+Constructor que inicializa el bucle de eventos del juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scenario} & Escenario principal del juego. \\
+\hline
+{\em snake} & Instancia de la serpiente. \\
+\hline
+{\em apple} & Comida de tipo manzana. \\
+\hline
+{\em pineapple} & Comida de tipo piña. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_key_event_loop_8java_source_l00038}{38}} of file \mbox{\hyperlink{_key_event_loop_8java_source}{Key\+Event\+Loop.\+java}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1key__event__loop_1_1_key_event_loop_a2d5073765ec04338f8b19dcdad4cb3a6_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpoo_1_1key__event__loop_1_1_key_event_loop_ab435c3b2415b3c1f7ba23224390e5fe6}\index{poo.key\_event\_loop.KeyEventLoop@{poo.key\_event\_loop.KeyEventLoop}!gameOver@{gameOver}}
+\index{gameOver@{gameOver}!poo.key\_event\_loop.KeyEventLoop@{poo.key\_event\_loop.KeyEventLoop}}
+\doxysubsubsection{\texorpdfstring{gameOver()}{gameOver()}}
+{\footnotesize\ttfamily \label{classpoo_1_1key__event__loop_1_1_key_event_loop_ab435c3b2415b3c1f7ba23224390e5fe6} 
+void poo.\+key\+\_\+event\+\_\+loop.\+Key\+Event\+Loop.\+game\+Over (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Detiene el bucle principal y gestiona el fin del juego. 
+
+Este método detiene el movimiento de la serpiente, muestra la pantalla de "{}\+Game Over"{} y prepara la aplicación para reiniciar. 
+
+Definition at line \mbox{\hyperlink{_key_event_loop_8java_source_l00130}{130}} of file \mbox{\hyperlink{_key_event_loop_8java_source}{Key\+Event\+Loop.\+java}}.
+
+\Hypertarget{classpoo_1_1key__event__loop_1_1_key_event_loop_ac83f6f4da1d488a8ad4d25bc18ee4d77}\index{poo.key\_event\_loop.KeyEventLoop@{poo.key\_event\_loop.KeyEventLoop}!startLoop@{startLoop}}
+\index{startLoop@{startLoop}!poo.key\_event\_loop.KeyEventLoop@{poo.key\_event\_loop.KeyEventLoop}}
+\doxysubsubsection{\texorpdfstring{startLoop()}{startLoop()}}
+{\footnotesize\ttfamily \label{classpoo_1_1key__event__loop_1_1_key_event_loop_ac83f6f4da1d488a8ad4d25bc18ee4d77} 
+void poo.\+key\+\_\+event\+\_\+loop.\+Key\+Event\+Loop.\+start\+Loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Inicia el bucle principal del juego, donde se maneja el movimiento de la serpiente y las colisiones. 
+
+
+
+Definition at line \mbox{\hyperlink{_key_event_loop_8java_source_l00074}{74}} of file \mbox{\hyperlink{_key_event_loop_8java_source}{Key\+Event\+Loop.\+java}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1key__event__loop_1_1_key_event_loop_ac83f6f4da1d488a8ad4d25bc18ee4d77_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpoo_1_1key__event__loop_1_1_key_event_loop_ac83f6f4da1d488a8ad4d25bc18ee4d77_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/tmp/\+Proyecto-\/\+LAB\+\_\+/src/main/java/poo/key\+\_\+event\+\_\+loop/\mbox{\hyperlink{_key_event_loop_8java}{Key\+Event\+Loop.\+java}}\end{DoxyCompactItemize}

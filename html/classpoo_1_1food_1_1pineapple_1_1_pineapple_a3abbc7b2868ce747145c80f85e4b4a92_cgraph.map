@@ -1,0 +1,11 @@
+<map id="poo.food.pineapple.Pineapple.Pineapple" name="poo.food.pineapple.Pineapple.Pineapple">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,201,77"/>
+<area shape="rect" id="Node000002" href="$classpoo_1_1food_1_1pineapple_1_1_pineapple.html#a3f94602548d2b3f4cdb5c6a488f43b50" title=" " alt="" coords="249,13,519,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,43,235,40,235,45,202,48"/>
+<area shape="rect" id="Node000004" href="$classpoo_1_1food_1_1pineapple_1_1_pineapple.html#aa65adcecfd3568ace305cd0bb0471e66" title=" " alt="" coords="277,64,490,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="202,64,263,70,262,75,201,69"/>
+<area shape="rect" id="Node000003" href="$classpoo_1_1canvas__utils__square_1_1_canvas_utils_squares.html#a82d7f5fae0f586cc76ea8c4d2e39c6f9" title="Crea un objeto Canvas con un cuadrado de un color específico." alt="" coords="567,5,797,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="520,24,551,24,551,29,520,29"/>
+<area shape="rect" id="Node000005" href="$classpoo_1_1food_1_1_food.html#af265cf2b621530449148f4fe13b3f0d5" title="Genera un número aleatorio dentro de un rango dado y lo ajusta a la cuadrícula del juego." alt="" coords="580,72,784,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="491,83,564,83,564,88,491,88"/>
+</map>

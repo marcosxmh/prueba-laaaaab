@@ -1,0 +1,11 @@
+<map id="poo.food.Food.randomNumbers" name="poo.food.Food.randomNumbers">
+<area shape="rect" id="Node000001" title="Genera un número aleatorio dentro de un rango dado y lo ajusta a la cuadrícula del juego." alt="" coords="510,47,714,73"/>
+<area shape="rect" id="Node000002" href="$classpoo_1_1food_1_1apple_1_1_apple.html#ab88400300eb689e1e0b7821b9788dd08" title="Asigna una posición aleatoria a la manzana dentro del área del juego." alt="" coords="273,5,438,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="494,47,438,40,439,35,495,42"/>
+<area shape="rect" id="Node000004" href="$classpoo_1_1food_1_1pineapple_1_1_pineapple.html#aa65adcecfd3568ace305cd0bb0471e66" title=" " alt="" coords="249,72,462,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="495,78,463,82,462,77,494,73"/>
+<area shape="rect" id="Node000003" href="$classpoo_1_1food_1_1apple_1_1_apple.html#a5ad73cab59a5f52f2a7589ba0c90323b" title="Constructor de la clase Apple." alt="" coords="13,13,193,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="257,29,194,29,194,24,257,24"/>
+<area shape="rect" id="Node000005" href="$classpoo_1_1food_1_1pineapple_1_1_pineapple.html#a3abbc7b2868ce747145c80f85e4b4a92" title=" " alt="" coords="5,72,201,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="233,96,201,96,201,91,233,91"/>
+</map>
