@@ -38,7 +38,6 @@ public class Game extends Application {
         Apple apple = new Apple();
         Pineapple pineapple = new Pineapple();
 
-        // head sendo desenhada como um square
         new Scenario(stage, snake, apple, pineapple);
     }
 
