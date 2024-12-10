@@ -8,6 +8,16 @@
   <name>SnakeGame_POO</name>
   <url>http://maven.apache.org</url>
 
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <sonar.organization>alu0101423944</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    <maven.compiler.release>17</maven.compiler.release>
+  </properties>
+
+
   <!-- NEW dependencyManagement -->
   <dependencyManagement>
     <dependencies>
