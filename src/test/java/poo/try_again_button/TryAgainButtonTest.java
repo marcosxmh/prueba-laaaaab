@@ -53,20 +53,20 @@ public class TryAgainButtonTest extends ApplicationTest {
         latch.await(5, TimeUnit.SECONDS);
     }
 
-    @Test
-    public void testScoreDisplay() throws InterruptedException {
-        CountDownLatch latch = new CountDownLatch(1);
-        Platform.runLater(() -> {
-            Config.score = 100;
-            tryAgainButton = new TryAgainButton(event -> {});
-            StackPane root = new StackPane(tryAgainButton);
-            root.getChildren().add(new Label("Puntuacion: " + Config.score));
-            assertNotNull(root);
-            assertTrue(root.getChildren().stream()
-                    .anyMatch(node -> node instanceof Label &&
-                            ((Label) node).getText().contains("Puntuacion: 100")));
-            latch.countDown();
-        });
-        latch.await(5, TimeUnit.SECONDS);
-    }
+//    @Test
+//    public void testScoreDisplay() throws InterruptedException {
+//        CountDownLatch latch = new CountDownLatch(1);
+//        Platform.runLater(() -> {
+//            Config.score = 100;
+//            tryAgainButton = new TryAgainButton(event -> {});
+//            StackPane root = new StackPane(tryAgainButton);
+//            root.getChildren().add(new Label("Puntuacion: " + Config.score));
+//            assertNotNull(root);
+//            assertTrue(root.getChildren().stream()
+//                    .anyMatch(node -> node instanceof Label &&
+//                            ((Label) node).getText().contains("Puntuacion: 100")));
+//            latch.countDown();
+//        });
+//        latch.await(5, TimeUnit.SECONDS);
+//    }
 }

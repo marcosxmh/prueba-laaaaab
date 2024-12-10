@@ -59,13 +59,4 @@ public class Archivo {
 
         return scores.size() > limit ? scores.subList(0, limit) : scores;
     }
-
-    /**
-     * @brief Establece las mejores puntuaciones para pruebas.
-     *
-     * @param scores Una lista de puntuaciones en formato de texto.
-     */
-    public static void setTopScores(List<String> scores) {
-        topScores = scores;
-    }
 }
