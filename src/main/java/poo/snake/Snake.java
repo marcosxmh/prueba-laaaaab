@@ -19,6 +19,14 @@ import java.util.List;
 public class Snake {
 
     /**
+     * @brief Obtiene la lista de partes del cuerpo de la serpiente.
+     *
+     * @return Lista de objetos Canvas que representan las partes del cuerpo de la serpiente.
+     */
+    public List<Canvas> getBody() {
+        return this.body;
+    }
+    /**
      * @brief Cabeza de la serpiente.
      *
      * Esta variable representa el Canvas que contiene la cabeza de la serpiente.
