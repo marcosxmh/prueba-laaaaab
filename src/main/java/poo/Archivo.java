@@ -3,6 +3,8 @@ package poo;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * @class Archivo
@@ -10,6 +12,8 @@ import java.util.List;
  * Permite guardar las puntuaciones del jugador y obtener las mejores puntuaciones.
  */
 public class Archivo {
+
+    private static final Logger LOGGER = Logger.getLogger(Archivo.class.getName());
 
     /**
      * @brief Escribe la puntuación de un jugador en un archivo de texto.
@@ -23,7 +27,7 @@ public class Archivo {
             bw.write(nickname + ": " + score);
             bw.newLine();
         } catch (IOException e) {
-            e.printStackTrace();
+            LOGGER.log(Level.SEVERE, "Error writing score to file", e);
         }
     }
 
@@ -43,7 +47,7 @@ public class Archivo {
                 scores.add(line);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            LOGGER.log(Level.SEVERE, "Error writing score to file", e);
         }
 
         // Ordenar las puntuaciones de mayor a menor
