@@ -14,6 +14,7 @@ import java.util.logging.Logger;
 public class Archivo {
 
     private static final Logger LOGGER = Logger.getLogger(Archivo.class.getName());
+    private static List<String> topScores = new ArrayList<>();
 
     /**
      * @brief Escribe la puntuación de un jugador en un archivo de texto.
@@ -47,7 +48,7 @@ public class Archivo {
                 scores.add(line);
             }
         } catch (IOException e) {
-            LOGGER.log(Level.SEVERE, "Error writing score to file", e);
+            LOGGER.log(Level.SEVERE, "Error reading scores from file", e);
         }
 
         // Ordenar las puntuaciones de mayor a menor
