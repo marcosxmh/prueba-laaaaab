@@ -12,5 +12,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="java -Dfile.encoding=UTF-8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SnakeGame_POO" options="" />
+    </option>
   </component>
 </project>

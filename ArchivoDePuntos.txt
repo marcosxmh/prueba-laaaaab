@@ -2,4 +2,8 @@ player1: 100
 ruyman: 4
 pedro: 30
 alberto: 50
-
+null: 0
+null: 0
+null: 0
+null: 0
+ale: 7

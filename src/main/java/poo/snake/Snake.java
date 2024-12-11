@@ -17,7 +17,6 @@ import java.util.List;
  * Esta clase administra la construcción, movimiento, crecimiento y colisiones de la serpiente.
  */
 public class Snake {
-
     /**
      * @brief Obtiene la lista de partes del cuerpo de la serpiente.
      *
