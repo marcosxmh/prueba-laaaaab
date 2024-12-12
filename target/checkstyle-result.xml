@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="9.3">
-<file name="C:\Users\Marcos\Desktop\Proyecto-LAB_\src\main\java\poo\Archivo.java">
+<file name="C:\Users\Marcos\Desktop\prueba-laaaaab\src\main\java\poo\Archivo.java">
 <error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="3" column="15" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.io.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
@@ -21,7 +21,7 @@
 <error line="43" column="45" severity="error" message="Parameter limit should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 <error line="45" severity="error" message="Line is longer than 80 characters (found 93)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 </file>
-<file name="C:\Users\Marcos\Desktop\Proyecto-LAB_\src\main\java\poo\canvas_utils_square\CanvasUtilsSquares.java">
+<file name="C:\Users\Marcos\Desktop\prueba-laaaaab\src\main\java\poo\canvas_utils_square\CanvasUtilsSquares.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="9" column="4" severity="error" message="Unknown tag &apos;class&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="10" column="4" severity="error" message="Unknown tag &apos;brief&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
@@ -34,7 +34,7 @@
 <error line="28" severity="error" message="Line is longer than 80 characters (found 101)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="34" severity="error" message="Line is longer than 80 characters (found 100)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 </file>
-<file name="C:\Users\Marcos\Desktop\Proyecto-LAB_\src\main\java\poo\config\Config.java">
+<file name="C:\Users\Marcos\Desktop\prueba-laaaaab\src\main\java\poo\config\Config.java">
 <error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="4" column="4" severity="error" message="Unknown tag &apos;class&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
@@ -54,7 +54,7 @@
 <error line="52" column="27" severity="error" message="Variable &apos;score&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 <error line="57" column="27" severity="error" message="Variable &apos;tries&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 </file>
-<file name="C:\Users\Marcos\Desktop\Proyecto-LAB_\src\main\java\poo\food\apple\Apple.java">
+<file name="C:\Users\Marcos\Desktop\prueba-laaaaab\src\main\java\poo\food\apple\Apple.java">
 <error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="10" column="4" severity="error" message="Unknown tag &apos;class&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
@@ -70,7 +70,7 @@
 <error line="71" severity="error" message="Line is longer than 80 characters (found 107)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="77" severity="error" message="Line is longer than 80 characters (found 95)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 </file>
-<file name="C:\Users\Marcos\Desktop\Proyecto-LAB_\src\main\java\poo\food\Food.java">
+<file name="C:\Users\Marcos\Desktop\prueba-laaaaab\src\main\java\poo\food\Food.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="6" column="4" severity="error" message="Unknown tag &apos;class&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="7" severity="error" message="Line is longer than 80 characters (found 118)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
@@ -87,7 +87,7 @@
 <error line="42" severity="error" message="Line is longer than 80 characters (found 86)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="52" severity="error" message="Line is longer than 80 characters (found 86)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 </file>
-<file name="C:\Users\Marcos\Desktop\Proyecto-LAB_\src\main\java\poo\food\pineapple\Pineapple.java">
+<file name="C:\Users\Marcos\Desktop\prueba-laaaaab\src\main\java\poo\food\pineapple\Pineapple.java">
 <error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="14" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
@@ -96,7 +96,7 @@
 <error line="42" severity="error" message="Line is longer than 80 characters (found 109)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="61" severity="error" message="Line is longer than 80 characters (found 111)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 </file>
-<file name="C:\Users\Marcos\Desktop\Proyecto-LAB_\src\main\java\poo\Game.java">
+<file name="C:\Users\Marcos\Desktop\prueba-laaaaab\src\main\java\poo\Game.java">
 <error line="11" column="4" severity="error" message="Unknown tag &apos;class&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="12" column="4" severity="error" message="Unknown tag &apos;brief&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="13" severity="error" message="Line is longer than 80 characters (found 110)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
@@ -106,7 +106,7 @@
 <error line="29" severity="error" message="Line is longer than 80 characters (found 100)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="36" column="23" severity="error" message="Parameter stage should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
-<file name="C:\Users\Marcos\Desktop\Proyecto-LAB_\src\main\java\poo\key_event_loop\KeyEventLoop.java">
+<file name="C:\Users\Marcos\Desktop\prueba-laaaaab\src\main\java\poo\key_event_loop\KeyEventLoop.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="14" column="4" severity="error" message="Unknown tag &apos;class&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="15" severity="error" message="Line is longer than 80 characters (found 137)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
@@ -146,7 +146,7 @@
 <error line="120" severity="error" message="Line is longer than 80 characters (found 86)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="127" severity="error" message="Line is longer than 80 characters (found 92)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 </file>
-<file name="C:\Users\Marcos\Desktop\Proyecto-LAB_\src\main\java\poo\play_button\PlayButton.java">
+<file name="C:\Users\Marcos\Desktop\prueba-laaaaab\src\main\java\poo\play_button\PlayButton.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="13" column="4" severity="error" message="Unknown tag &apos;class&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="14" severity="error" message="Line is longer than 80 characters (found 125)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
@@ -173,7 +173,7 @@
 <error line="65" severity="error" message="Line is longer than 80 characters (found 92)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="70" column="25" severity="error" message="&apos;20&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
-<file name="C:\Users\Marcos\Desktop\Proyecto-LAB_\src\main\java\poo\scenario\Scenario.java">
+<file name="C:\Users\Marcos\Desktop\prueba-laaaaab\src\main\java\poo\scenario\Scenario.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="24" column="4" severity="error" message="Unknown tag &apos;class&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="25" severity="error" message="Line is longer than 80 characters (found 115)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
@@ -210,7 +210,7 @@
 <error line="142" column="30" severity="error" message="Parameter keyEventLoop should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 <error line="177" column="34" severity="error" message="Parameter node should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
-<file name="C:\Users\Marcos\Desktop\Proyecto-LAB_\src\main\java\poo\snake\Snake.java">
+<file name="C:\Users\Marcos\Desktop\prueba-laaaaab\src\main\java\poo\snake\Snake.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="14" column="4" severity="error" message="Unknown tag &apos;class&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="15" column="4" severity="error" message="Unknown tag &apos;brief&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
@@ -249,7 +249,7 @@
 <error line="217" severity="error" message="Line is longer than 80 characters (found 104)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="219" severity="error" message="Line is longer than 80 characters (found 95)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 </file>
-<file name="C:\Users\Marcos\Desktop\Proyecto-LAB_\src\main\java\poo\try_again_button\TryAgainButton.java">
+<file name="C:\Users\Marcos\Desktop\prueba-laaaaab\src\main\java\poo\try_again_button\TryAgainButton.java">
 <error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="21" column="4" severity="error" message="Unknown tag &apos;class&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
