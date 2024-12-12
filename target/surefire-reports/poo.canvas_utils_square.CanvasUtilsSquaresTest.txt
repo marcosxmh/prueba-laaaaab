@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: poo.canvas_utils_square.CanvasUtilsSquaresTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.722 s - in poo.canvas_utils_square.CanvasUtilsSquaresTest
