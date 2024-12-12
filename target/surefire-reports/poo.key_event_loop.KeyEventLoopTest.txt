@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: poo.key_event_loop.KeyEventLoopTest
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.243 s - in poo.key_event_loop.KeyEventLoopTest
